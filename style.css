@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+}
+
+.footer {
+    background-color: blue;
+    display: grid;
+    padding: 0.5vw;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+}
+
+@media (max-width: 320px) {
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 5vw;
+        padding: 5vw
+    }
+}
