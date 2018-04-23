@@ -1,8 +1,22 @@
+/*
+Generel
+*/
+
 * {
+    font-family: sans-serif;
     margin: 0;
 }
 
+<<<<<<< HEAD
 footer {
+=======
+/*
+Footer
+*/
+
+footer {
+
+>>>>>>> origin/master
     background-color: blue;
     display: grid;
     padding: 0.5vw;
@@ -16,55 +30,132 @@ footer {
         grid-gap: 5vw;
         padding: 5vw
     }
+}
 
-    /*
+/*
 Header
 */
-    header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-    }
 
-    header img {
-        height: 80px;
-        margin: 10px;
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+}
 
-    }
+header img {
+    height: 80px;
+    margin: 10px;
 
-    #header_bar {
-        background-color: red;
-        width: 100%;
-        height: 100px;
-        z-index: 110;
-        display: flex;
-        justify-content: center;
-    }
+}
 
-    #burger {
-        width: 50px;
-        height: 50px;
-        background-color: lightblue;
-    }
+#burger {
+    width: 60px;
+    height: 60px;
 
-    header nav {
-        position: absolute;
-        background-color: blue;
-        left: 0;
-        top: 0;
+    position: absolute;
+    left: 250px;
 
-        margin-top: 100px;
+    padding: 0 0;
 
-        width: 250px;
-        height: 100vh;
-        z-index: 100;
-    }
+    border-bottom-right-radius: 15px;
 
-    header nav button {
-        width: 180px;
-        height: 50px;
-        margin: 20px 35px;
+    background-color: lightblue;
 
-        font-size: 1.5em;
-    }
+    cursor: pointer;
+}
+
+#burger p {
+    position: absolute;
+
+    margin: 15px 20px;
+
+    font-size: 25px;
+
+    font-weight: 700;
+
+    opacity: 0;
+
+    top: 0;
+}
+
+#burger div:nth-child(1),
+#burger div:nth-child(2),
+#burger div:nth-child(3) {
+    width: 50px;
+    height: 8px;
+
+    background-color: #000;
+
+    margin: 7px 5px;
+
+    border-radius: 10px;
+
+    transition: 1s;
+}
+
+/* margin-top: 11; fordi der lægges 4 til 7 (den værdi margin-top var på før) */
+
+#burger div:first-child {
+    margin-top: 11px;
+}
+
+#burger.animate {
+    width: 100px;
+}
+
+#burger.animate p {
+    opacity: 1;
+    transform: translateX(20px)
+}
+
+#burger.animate div:nth-child(1) {
+    transform: rotate(-40deg) scale(0.6) translate(-20px, -2px);
+}
+
+#burger.animate div:nth-child(2) {
+    transform: translateX(60px) scale(0.6);
+    opacity: 0;
+}
+
+#burger.animate div:nth-child(3) {
+    transform: rotate(40deg) scale(0.6) translate(-20px, 2px);
+}
+
+}
+
+#header_bar {
+    background-color: red;
+    width: 100%;
+    height: 100px;
+    z-index: 110;
+    display: flex;
+    justify-content: center;
+}
+
+#burger {
+    width: 50px;
+    height: 50px;
+    background-color: lightblue;
+}
+
+header nav {
+    position: absolute;
+    background-color: blue;
+    left: 0;
+    top: 0;
+
+    margin-top: 100px;
+
+    width: 250px;
+    height: 100vh;
+    z-index: 100;
+}
+
+header nav button {
+    width: 180px;
+    height: 50px;
+    margin: 20px 35px;
+
+    font-size: 1.5em;
+}
