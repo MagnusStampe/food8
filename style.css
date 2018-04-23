@@ -7,16 +7,11 @@ Generel
     margin: 0;
 }
 
-<<<<<<< HEAD
-footer {
-=======
 /*
 Footer
 */
 
 footer {
-
->>>>>>> origin/master
     background-color: blue;
     display: grid;
     padding: 0.5vw;
@@ -120,8 +115,6 @@ header img {
 
 #burger.animate div:nth-child(3) {
     transform: rotate(40deg) scale(0.6) translate(-20px, 2px);
-}
-
 }
 
 #header_bar {
