@@ -16,4 +16,55 @@
         grid-gap: 5vw;
         padding: 5vw
     }
-}
+
+    /*
+Header
+*/
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+    }
+
+    header img {
+        height: 80px;
+        margin: 10px;
+
+    }
+
+    #header_bar {
+        background-color: red;
+        width: 100%;
+        height: 100px;
+        z-index: 110;
+        display: flex;
+        justify-content: center;
+    }
+
+    #burger {
+        width: 50px;
+        height: 50px;
+        background-color: lightblue;
+    }
+
+    header nav {
+        position: absolute;
+        background-color: blue;
+        left: 0;
+        top: 0;
+
+        margin-top: 100px;
+
+        width: 250px;
+        height: 100vh;
+        z-index: 100;
+    }
+
+    header nav button {
+        width: 180px;
+        height: 50px;
+        margin: 20px 35px;
+
+        font-size: 1.5em;
+    }
