@@ -1,4 +1,12 @@
 /*
+Generel
+*/
+
+* {
+    font-family: sans-serif;
+}
+
+/*
 Header
 */
 
@@ -25,9 +33,76 @@ header img {
 }
 
 #burger {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
+
+    position: absolute;
+    left: 250px;
+
+    padding: 0 0;
+
+    border-bottom-right-radius: 15px;
+
     background-color: lightblue;
+
+    cursor: pointer;
+}
+
+#burger p {
+    position: absolute;
+
+    margin: 15px 20px;
+
+    font-size: 25px;
+
+    font-weight: 700;
+
+    opacity: 0;
+
+    top: 0;
+}
+
+#burger div:nth-child(1),
+#burger div:nth-child(2),
+#burger div:nth-child(3) {
+    width: 50px;
+    height: 8px;
+
+    background-color: #000;
+
+    margin: 7px 5px;
+
+    border-radius: 10px;
+
+    transition: 1s;
+}
+
+/* margin-top: 11; fordi der lægges 4 til 7 (den værdi margin-top var på før) */
+
+#burger div:first-child {
+    margin-top: 11px;
+}
+
+#burger.animate {
+    width: 100px;
+}
+
+#burger.animate p {
+    opacity: 1;
+    transform: translateX(20px)
+}
+
+#burger.animate div:nth-child(1) {
+    transform: rotate(-40deg) scale(0.6) translate(-20px, -2px);
+}
+
+#burger.animate div:nth-child(2) {
+    transform: translateX(60px) scale(0.6);
+    opacity: 0;
+}
+
+#burger.animate div:nth-child(3) {
+    transform: rotate(40deg) scale(0.6) translate(-20px, 2px);
 }
 
 header nav {
