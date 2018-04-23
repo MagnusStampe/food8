@@ -7,6 +7,30 @@ Generel
     margin: 0;
 }
 
+/* Nyheder billeder */
+
+img {
+    width: 50vw;
+    margin-left: 45vw;
+
+}
+
+.img_container p {
+    position: absolute;
+    margin-left: 50vw;
+    margin-top: -7vw;
+    color: white;
+}
+
+.img_container h3 {
+    position: absolute;
+    margin-left: 50vw;
+    margin-top: -10vw;
+    color: white;
+}
+
+
+
 /*
 Footer
 */
