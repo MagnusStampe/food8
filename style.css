@@ -2,7 +2,7 @@
     margin: 0;
 }
 
-.footer {
+footer {
     background-color: blue;
     display: grid;
     padding: 0.5vw;
