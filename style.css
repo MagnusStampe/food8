@@ -226,3 +226,9 @@ nav a img {
     height: 45px;
     margin-top: 270px;
 }
+
+#map {
+    width: 80vw;
+    height: 50vw;
+    background: burlywood;
+}
