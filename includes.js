@@ -12,8 +12,19 @@ function loaded() {
 async function hentHeader() {
     let headerData = await fetch("header.html");
     let header = await headerData.text();
-    document.querySelector("header").innerHTML = await header;
+    document.querySelector("header").innerHTML = header;
+    document.querySelector("header").parentNode.appendChild(document.querySelector("header"));
+
+    function toggleMenu() {
+        document.querySelector("header nav").classList.toggle("open");
+        //document.querySelector("header nav").classList.toggle("show");
+
+        console.log("toggleMenu()");
+    };
+
+    document.querySelector("#burger").addEventListener("click", toggleMenu);
 };
+
 
 //Footer
 
