@@ -9,24 +9,36 @@ Generel
 
 /* Nyheder billeder */
 
-img {
-    width: 50vw;
+.grid_container {
     margin-left: 45vw;
-
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
+
+.img_container {
+    position: relative;
+    left: 250px;
+}
+
+.img_container img {
+    width: 100%;
+}
+
 
 .img_container p {
     position: absolute;
-    margin-left: 50vw;
-    margin-top: -7vw;
     color: white;
+    z-index: 3;
+    bottom: 1em;
+    left: 10px;
 }
 
 .img_container h3 {
     position: absolute;
-    margin-left: 50vw;
-    margin-top: -10vw;
     color: white;
+    z-index: 3;
+    bottom: 2em;
+    left: 10px;
 }
 
 
@@ -59,6 +71,7 @@ header {
     top: 0;
     left: 0;
     width: 100vw;
+    z-index: 100;
 }
 
 header img {
