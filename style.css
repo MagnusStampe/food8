@@ -7,6 +7,30 @@ Generel
     margin: 0;
 }
 
+/* Nyheder billeder */
+
+img {
+    width: 50vw;
+    margin-left: 45vw;
+
+}
+
+.img_container p {
+    position: absolute;
+    margin-left: 50vw;
+    margin-top: -7vw;
+    color: white;
+}
+
+.img_container h3 {
+    position: absolute;
+    margin-left: 50vw;
+    margin-top: -10vw;
+    color: white;
+}
+
+
+
 /*
 Footer
 */
@@ -77,12 +101,12 @@ header img {
 #burger div:nth-child(1),
 #burger div:nth-child(2),
 #burger div:nth-child(3) {
-    width: 50px;
+    width: 44px;
     height: 8px;
 
     background-color: #000;
 
-    margin: 7px 5px;
+    margin: 7px 8px;
 
     border-radius: 10px;
 
@@ -124,12 +148,6 @@ header img {
     z-index: 110;
     display: flex;
     justify-content: center;
-}
-
-#burger {
-    width: 50px;
-    height: 50px;
-    background-color: lightblue;
 }
 
 header nav {
