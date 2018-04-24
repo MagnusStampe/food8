@@ -65,8 +65,7 @@ body {
 
     color: black;
     z-index: 3;
-    bottom: 1em;
-    right: 20px;
+    padding: 20px;
 }
 
 /*
@@ -231,4 +230,13 @@ nav a img {
     width: 80vw;
     height: 50vw;
     background: burlywood;
+}
+
+.om {
+
+    padding: 20px;
+}
+
+h1 {
+    padding: 20px;
 }
