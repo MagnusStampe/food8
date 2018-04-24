@@ -9,6 +9,7 @@ Generel
 
 body {
     padding-top: 120px;
+    font-family: 'HK Grotesk'
 }
 
 /* Nyheder billeder */
@@ -27,6 +28,10 @@ body {
 }
 
 .img_container img {
+    width: 100%;
+}
+
+.rest_container img {
     width: 100%;
 }
 
