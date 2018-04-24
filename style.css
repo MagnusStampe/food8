@@ -55,7 +55,8 @@ Footer
 footer {
     background-color: beige;
     display: grid;
-    padding: 2vw;
+    padding-left: 20px;
+    padding-bottom: 20px;
 }
 
 footer p {
@@ -95,6 +96,7 @@ header img {
     cursor: pointer;
 
     transition: 0.5s;
+    top: -80px;
 }
 
 #burger p {
@@ -102,7 +104,7 @@ header img {
 
     margin: 15px 20px;
 
-    font-size: 25px;
+    font-size: 1.5em;
 
     font-weight: 700;
 
@@ -122,8 +124,6 @@ header img {
     background-color: #000;
 
     margin: 7px 8px;
-
-    border-radius: 10px;
 
     transition: 0.5s;
 }
@@ -187,7 +187,21 @@ header nav.open {
 header nav button {
     width: 180px;
     height: 50px;
-    margin: 20px 35px;
-
+    margin: 7px 5px;
     font-size: 1.5em;
+    border: none;
+    background: none;
+    text-align: left;
+}
+
+header nav button:hover {
+    color: darkgrey;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+nav a img {
+    width: 45px;
+    height: 45px;
+    margin-top: 270px;
 }
