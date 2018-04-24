@@ -31,10 +31,6 @@ body {
     width: 100%;
 }
 
-.rest_container img {
-    width: 100%;
-}
-
 
 .img_container p {
     position: absolute;
@@ -52,6 +48,16 @@ body {
     left: 10px;
 }
 
+
+/* restaurant billeder */
+
+.rest_container img {
+    width: 100%;
+}
+
+.rest_container img {
+    margin: 15px 15px 15px 15px;
+}
 
 /*
 Footer
