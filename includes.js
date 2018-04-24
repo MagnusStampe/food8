@@ -44,7 +44,7 @@ async function hentFooter() {
 
 //henter json//
 async function start() {
-    let jsondata = await fetch("http://magnusstampe.dk/food8/wp/wp-json/wp/v2/butikker");
+    let jsondata = await fetch("http: //magnusstampe.dk/food8/wp/wp-json/wp/v2/butikker");
     MinSlider = await jsondata.json();
     vis();
 
