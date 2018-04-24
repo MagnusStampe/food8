@@ -57,6 +57,16 @@ body {
 
 .rest_container img {
     margin: 15px 15px 15px 15px;
+    padding: 5vw;
+}
+
+
+.rest_container h1 {
+
+    color: black;
+    z-index: 3;
+    bottom: 1em;
+    right: 20px;
 }
 
 /*
