@@ -3,18 +3,28 @@ Generel
 */
 
 * {
-    font-family: sans-serif;
+    font-family: 'Asap', sans-serif;
     margin: 0;
 }
 
 body {
     padding-top: 120px;
-    font-family: 'HK Grotesk'
+    font-family: 'Asap', sans-serif;
 }
 
 img {
     width: 100%;
 }
+
+a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-family: 'Asap', sans-serif;
+    text-decoration: underline;
+}
+
+
 
 /* Nyheder billeder */
 
@@ -64,6 +74,10 @@ img {
     padding: 5vw;
 }
 
+.rest_container {
+    padding: 10vw;
+    margin: 7vw;
+}
 
 .rest_container h1 {
 
@@ -268,6 +282,11 @@ nav a img {
 
 h1 {
     padding: 20px;
+    font-family: 'Asap', sans-serif;
+}
+
+h2 {
+    font-family: 'Asap', sans-serif;
 }
 
 /* Restaurant */
