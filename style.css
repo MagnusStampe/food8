@@ -299,13 +299,13 @@ h2 {
 #info_box {
     margin: 10px;
     padding: 10px;
-    background-color: #444;
-    border-radius: 20px;
+    background-color: #99e0db;
+
 }
 
 #info_box nav {
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 10px 10px 0px 0px;
+    background-color: #ffffff;
+
 }
 
 #info_box nav button {
@@ -317,17 +317,8 @@ h2 {
 }
 
 #info {
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 0 0 10px 10px;
+    background-color: #faf8cb;
+
     padding: 15px;
     min-height: 500px;
-}
-
-.under_overskrift span {
-    color: black;
-
-    letter-spacing: -1px;
-
-    /* fallback color */
-    padding: 10px;
 }
