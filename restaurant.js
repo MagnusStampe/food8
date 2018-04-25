@@ -28,8 +28,6 @@ async function hentRestaurant() {
         //let jsonData = await fetch("test.json");
         rest = await jsonData.json();
 
-        console.log(rest[0].acf.restaurant_navn);
-
         jsonInput();
 
     }
@@ -37,12 +35,16 @@ async function hentRestaurant() {
     function jsonInput() {
         rest.forEach(restaurant => {
             let restaurantNavn = document.getElementById("slet").textContent;
-            console.log(restaurantNavn);
 
-            if (restaurantNavn == rest[0].acf.restaurant_navn) {
+            if (restaurantNavn == restaurant.acf.restaurant_navn) {
+                console.log(restaurantNavn + " fundet");
+
+                document.querySelector("[data-om]").innerHTML = restaurant.acf.om_restauranten;
+                document.querySelector("[data-address]").innerHTML = restaurant.acf.adresse;
+                document.querySelector("[data-nummer]").innerHTML = "Tlf: + " + restaurant.acf.nummer;
 
             } else {
-                console.log(restaurantNavn + " & " + restauranter.restaurant_navn);
+                console.log(restaurantNavn + " & " + restaurant.acf.restaurant_navn);
             }
         });
     }
