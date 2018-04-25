@@ -12,6 +12,10 @@ body {
     font-family: 'HK Grotesk'
 }
 
+img {
+    width: 100%;
+}
+
 /* Nyheder billeder */
 
 .grid_container {
@@ -97,7 +101,7 @@ header {
 }
 
 header img {
-    height: 80px;
+    width: 150px;
     margin: 10px;
 
 }
