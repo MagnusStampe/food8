@@ -12,6 +12,10 @@ body {
     font-family: 'HK Grotesk'
 }
 
+img {
+    width: 100%;
+}
+
 /* Nyheder billeder */
 
 .grid_container {
@@ -97,7 +101,7 @@ header {
 }
 
 header img {
-    height: 80px;
+    width: 150px;
     margin: 10px;
 
 }
@@ -226,21 +230,25 @@ nav a img {
     margin-top: 270px;
 }
 
-.style1 {
+.nyhed_knap {
     background: none;
     margin-left: 30px;
     border: solid;
 }
 
-.style2 {
+.guides_knap {
     border: solid;
     background: none;
 }
 
-.style3 {
+.tilmeld_knap {
+    margin-left: 90px;
+    display: inline-block;
+}
+
+.tilmeld_knap button {
     border: none;
     background: none;
-    margin-left: 90px;
 }
 
 
