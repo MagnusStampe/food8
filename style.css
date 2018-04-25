@@ -318,12 +318,3 @@ h2 {
     padding: 15px;
     min-height: 500px;
 }
-
-.under_overskrift span {
-    color: black;
-
-    letter-spacing: -1px;
-
-    /* fallback color */
-    padding: 10px;
-}
