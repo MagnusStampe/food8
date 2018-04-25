@@ -205,3 +205,21 @@ nav a img {
     height: 45px;
     margin-top: 270px;
 }
+
+.style1 {
+    background: none;
+    margin-left: 30px;
+    border: solid;
+}
+
+.style2 {
+    border: solid;
+    background: none;
+}
+
+.style3 {
+    border: none;
+    background: none;
+    margin-left: 90px;
+
+}
