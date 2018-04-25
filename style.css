@@ -256,6 +256,9 @@ nav a img {
     width: 80vw;
     height: 50vw;
     background: burlywood;
+    align-self: center;
+
+    padding: 40px;
 }
 
 .om {

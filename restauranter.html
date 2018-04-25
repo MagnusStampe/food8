@@ -25,7 +25,96 @@
         </article>
 
     </template>
+    <div id="map">
 
+
+    </div>
+    <script>
+        let map;
+
+        let fatpike = {
+            lat: 55.666611,
+            lng: 12.579911
+        };
+
+        let noho = {
+            lat: 55.667643,
+            lng: 12.558010
+        };
+
+        let metier = {
+            lat: 55.695038,
+            lng: 12.569340,
+        }
+
+        let spisehuset = {
+            lat: 55.669184,
+            lng: 12.560794,
+        }
+        let unmercato = {
+            lat: 55.683928,
+            lng: 12.570082,
+        }
+
+        let fleisch = {
+            lat: 55.669064,
+            lng: 12.558715,
+        }
+
+
+        function initMap() {
+            let map = new google.maps.Map(document.querySelector("#map"), {
+                center: fatpike,
+                zoom: 10
+            });
+
+            let marker = new google.maps.Marker({
+                position: fatpike,
+                title: "The Fat Pike",
+
+                map: map
+            });
+
+            let marker1 = new google.maps.Marker({
+                position: noho,
+
+                title: "NOHO",
+                map: map
+            });
+
+            let marker2 = new google.maps.Marker({
+                position: metier,
+                title: "Metier",
+                map: map
+            });
+
+            let marker3 = new google.maps.Marker({
+                position: spisehuset,
+                title: "Spisehuset",
+                map: map
+            });
+
+            let marker4 = new google.maps.Marker({
+                position: unmercato,
+                title: "Un Mercato",
+                map: map
+            });
+            let marker5 = new google.maps.Marker({
+                position: fleisch,
+                title: "Fleisch",
+                map: map
+            });
+            let infowindow = new google.maps.InfoWindow({
+                content: "<h2>Home</h2> <p>Her bor jeg </p>"
+            });
+            marker.addListener("click", () => {
+                infowindow.open(map, marker);
+            });
+
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArX-jPuUGnALQVkrzWT8bHB8tvfJGly3I&callback=initMap">
+    </script>
     <footer></footer>
 
     <script src="includes.js"></script>
@@ -33,5 +122,3 @@
 </body>
 
 </html>
-
-
