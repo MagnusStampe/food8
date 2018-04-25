@@ -1,6 +1,6 @@
 // Initial function
 
-let restauranter;
+let rest;
 let billede = 1;
 let menukort = 1;
 
@@ -25,10 +25,10 @@ async function hentRestaurant() {
         console.log("hent JSON");
 
         //let jsonData = await fetch("http://www.magnusstampe.dk/food8/wp/wp-json/acf/v3/restauranter");
-        let jsonData = await fetch("restauranter.json");
-        restauranter = await jsonData.json();
+        let jsonData = await fetch("test.json");
+        rest = await jsonData.json();
 
-        console.log(restauranter.acf);
+        console.log(rest);
 
         jsonInput();
 
@@ -39,9 +39,7 @@ async function hentRestaurant() {
             let restaurantNavn = document.getElementById("slet").textContent;
             console.log(restaurantNavn);
 
-            if (restaurantNavn == restauranter.restaurant_navn) {
-                alert("Det virker");
-            } else {
+            if (restaurantNavn == restauranter.restaurant_navn) {} else {
                 console.log(restaurantNavn + " & " + restauranter.restaurant_navn);
             }
 
