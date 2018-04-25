@@ -3,9 +3,9 @@
 document.addEventListener("DOMContentLoaded", loaded);
 
 function loaded() {
-    hentHeader()
-    hentFooter()
-    start()
+    hentHeader();
+    hentFooter();
+    start();
 };
 
 //Header
@@ -40,28 +40,3 @@ async function hentFooter() {
 
 
 //kloner//
-
-
-//henter json//
-async function start() {
-    let jsondata = await fetch("http: //magnusstampe.dk/food8/wp/wp-json/wp/v2/butikker");
-    MinSlider = await jsondata.json();
-    vis();
-
-}
-
-function vis() {
-    let dest = document.querySelector("[data-buti-dest]");
-    let temp = document.querySelector("[data-template]");
-
-    MinSlider.forEach(billeder => {
-        console.log(billeder);
-        let klon = temp.cloneNode(true).content;
-        //        //data i <div>
-        klon.querySelector("[data-buti-h2").textContent = billeder.date;
-        dest.appendChild(klon);
-        //
-    });
-    //
-
-}

@@ -1,53 +1,34 @@
-// Initial function
-
-let rest;
-let billede = 1;
-let menukort = 1;
-
 document.addEventListener("DOMContentLoaded", loaded);
 
 function loaded() {
-    hentRestaurant();
+    hentJson();
 }
 
-// Hent restaurant HTML
 
-async function hentRestaurant() {
-    let htmlData = await fetch("restaurant.html");
-    console.log("Hent HTML");
-    let restaurantHtml = await htmlData.text();
-    document.querySelector("main").innerHTML = restaurantHtml;
+//JSON
 
-    hentJson();
-    // Hent JSON
+async function hentJson() {
+    let jsonData = await fetch("http://www.magnusstampe.dk/food8/wp/wp-json/acf/v3/restauranter");
+    rest = await jsonData.json();
 
-    async function hentJson() {
-        console.log("hent JSON");
+    console.log("Hent JSON")
+    vis();
 
-        //let jsonData = await fetch("http://www.magnusstampe.dk/food8/wp/wp-json/acf/v3/restauranter");
-        let jsonData = await fetch("test.json");
-        rest = await jsonData.json();
+    function vis() {
+        console.log("vis()")
+        let dest = document.querySelector("[data-rest-dest]");
+        let temp = document.querySelector("[data-rest-temp]");
 
-        console.log(rest);
+        rest.forEach(restaurant => {
 
-        jsonInput();
+            let klon = temp.cloneNode(true).content;
 
-    }
-
-    function jsonInput() {
-        restauranter.forEach(restaurant => {
-            let restaurantNavn = document.getElementById("slet").textContent;
-            console.log(restaurantNavn);
-
-            if (restaurantNavn == restauranter.restaurant_navn) {} else {
-                console.log(restaurantNavn + " & " + restauranter.restaurant_navn);
-            }
-
+            klon.querySelector("[data-rest-h2]").innerHTML = restaurant.acf.restaurant_navn;
+            klon.querySelector("[data-rest-a]").href = restaurant.acf.Link + ".html";
+            klon.querySelector("[data-rest-img]").src = restaurant.acf.baggrundsbillede.url;
+            klon.querySelector("[data-rest-img]").alt = restaurant.acf.restaurant_navn;
+            console.log(restaurant.acf.baggrundsbillede);
+            dest.appendChild(klon);
         });
     }
-
-    //Galleri
-
-
-
 }

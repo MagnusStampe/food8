@@ -1,30 +1,22 @@
 <!DOCTYPE html>
-<html lang="da">
+<html lang="">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food8 - Restauranter</title>
-    <link rel="stylesheet" href="style.css">
+    <title></title>
+    <style>
+        #map {
+            width: 80vw;
+            height: 50vw;
+            background: burlywood;
+        }
+
+    </style>
+
 </head>
 
 <body>
-    <header></header>
-
-    <!-- indsæt søgefelt -->
-
-    <!-- Destination til template - Restauranter -->
-    <section id="restauranter" data-rest-dest></section>
-
-    <template data-rest-temp>
-
-        <article data-rest-article>
-            <a href="" data-rest-a>
-            <h2 data-rest-h2></h2>
-            <img src="" alt="" data-rest-img></a>
-        </article>
-
-    </template>
     <div id="map">
 
 
@@ -112,13 +104,12 @@
             });
 
         }
+
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArX-jPuUGnALQVkrzWT8bHB8tvfJGly3I&callback=initMap">
-    </script>
-    <footer></footer>
 
-    <script src="includes.js"></script>
-    <script src="restauranter.js"></script>
+
+    </script>
 </body>
 
 </html>

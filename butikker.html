@@ -12,6 +12,10 @@
 
     <!-- indsæt søgefelt -->
 
+    <form action="/action_page.php">
+
+        <input type="text" name="søg" value="søg">
+    </form>
     <!-- Destination til template - Restauranter det skal hentes ind med json -->
     <section id="restauranter" data-buti-dest></section>
 
@@ -20,14 +24,18 @@
     <template data-template>
 
         <article data-menu>
-            <h2 data-buti-h2></h2>
+
             <img src="" alt="" data-buti-img>
+
         </article>
 
     </template>
 
     <footer></footer>
 
+
     <script src="includes.js"></script>
+    <script src="butikker.js"></script>
+
 </body>
 </html>

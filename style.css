@@ -3,14 +3,32 @@ Generel
 */
 
 * {
-    font-family: sans-serif;
+    font-family: 'Asap', sans-serif;
     margin: 0;
 }
 
 body {
     padding-top: 120px;
-    font-family: 'HK Grotesk'
+    font-family: 'Asap', sans-serif;
 }
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-family: 'Asap', sans-serif;
+    text-decoration: underline;
+}
+
+p {
+    margin: 10px 0;
+}
+
+
 
 /* Nyheder billeder */
 
@@ -60,6 +78,10 @@ body {
     padding: 5vw;
 }
 
+.rest_container {
+    padding: 10vw;
+    margin: 7vw;
+}
 
 .rest_container h1 {
 
@@ -97,7 +119,7 @@ header {
 }
 
 header img {
-    height: 80px;
+    width: 170px;
     margin: 10px;
 
 }
@@ -226,21 +248,25 @@ nav a img {
     margin-top: 270px;
 }
 
-.style1 {
+.nyhed_knap {
     background: none;
     margin-left: 30px;
     border: solid;
 }
 
-.style2 {
+.guides_knap {
     border: solid;
     background: none;
 }
 
-.style3 {
+.tilmeld_knap {
+    margin-left: 90px;
+    display: inline-block;
+}
+
+.tilmeld_knap button {
     border: none;
     background: none;
-    margin-left: 90px;
 }
 
 
@@ -248,13 +274,51 @@ nav a img {
     width: 80vw;
     height: 50vw;
     background: burlywood;
+    align-self: center;
+
+    padding: 40px;
 }
 
 .om {
 
     padding: 20px;
+    position: relative;
 }
 
 h1 {
     padding: 20px;
+    font-family: 'Asap', sans-serif;
+}
+
+h2 {
+    font-family: 'Asap', sans-serif;
+}
+
+/* Restaurant */
+
+#info_box {
+    margin: 10px;
+    padding: 10px;
+    background-color: #99e0db;
+
+}
+
+#info_box nav {
+    background-color: #ffffff;
+
+}
+
+#info_box nav button {
+    background-color: transparent;
+    border: none;
+    color: #444;
+    font-weight: 700;
+    padding: 5px;
+}
+
+#info {
+    background-color: #faf8cb;
+
+    padding: 15px;
+    min-height: 500px;
 }

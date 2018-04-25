@@ -6,24 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food8</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
+    <link rel="stylesheet" href="styleSlider.css">
 </head>
 
 <body>
 
     <header></header>
+    <div class="slideshow-container">
+
+
+
+
+        <section id="restauranter" data-buti-dest></section>
+
+
+        <template data-template>
+
+        <article data-menu>
+<div id="ffs2" class="mySlides fade">
+            <img class="ffs" src="" alt="" data-buti-img>
+            </div>
+        </article>
+
+    </template>
+
+        <a class="prev" onclick="plusDivs(-1)">&#10094;</a>
+        <a class="next" onclick="plusDivs(1)">&#10095;</a>
+    </div>
+
 
     <main>
 
-        <div id="slideshow"></div>
-
-        <form action="restauranter.html"><button>Se restauranter</button></form>
-        <form action="butikker.html"><button>Se butikker</button></form>
+        <form action="restauranter.html"><button class="homeButton1">Se restauranter</button></form>
+        <form action="butikker.html"><button class="homeButton2">Se butikker</button></form>
 
     </main>
 
     <footer></footer>
 
     <script src="includes.js"></script>
+
+    <script src="show.js"></script>
 </body>
 
 </html>
