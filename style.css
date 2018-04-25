@@ -9,6 +9,7 @@ Generel
 
 body {
     padding-top: 120px;
+    font-family: 'HK Grotesk'
 }
 
 /* Nyheder billeder */
@@ -47,6 +48,25 @@ body {
     left: 10px;
 }
 
+
+/* restaurant billeder */
+
+.rest_container img {
+    width: 100%;
+}
+
+.rest_container img {
+    margin: 15px 15px 15px 15px;
+    padding: 5vw;
+}
+
+
+.rest_container h1 {
+
+    color: black;
+    z-index: 3;
+    padding: 20px;
+}
 
 /*
 Footer
@@ -221,5 +241,20 @@ nav a img {
     border: none;
     background: none;
     margin-left: 90px;
+}
 
+
+#map {
+    width: 80vw;
+    height: 50vw;
+    background: burlywood;
+}
+
+.om {
+
+    padding: 20px;
+}
+
+h1 {
+    padding: 20px;
 }
