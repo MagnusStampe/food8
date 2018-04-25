@@ -4,6 +4,8 @@ let rest;
 let billede = 1;
 
 let info;
+let highlightNew = "om";
+let highlightOld;
 
 document.addEventListener("DOMContentLoaded", loaded);
 
@@ -13,10 +15,9 @@ function loaded() {
 
 //insæt HTML i infobox
 function navListener(data) {
-    console.log("hej");
-    document.querySelector("[data-info]").innerHTML = info.acf[data];
+    document.querySelector("[data-info]").innerHTML = info.acf["menukort" + data];
+    highlightNav(data);
 }
-
 // Hent restaurant HTML
 
 async function hentRestaurant() {
@@ -36,12 +37,23 @@ async function hentRestaurant() {
 
     }
 
+    function highlightNav(high) {
+        highlightOld = highlightNew;
+        highlightNew = high;
+
+        console.log("[data-nav-" + highlightNew + "]");
+
+        document.querySelector("[data-nav-" + highlightNew + "]").classList.add("highlight");
+        document.querySelector("[data-nav-" + highlightOld + "]").classList.remove("highlight");
+    }
+
+
     function jsonInput() {
         rest.forEach(restaurant => {
-            let restaurantNavn = document.getElementById("slet").textContent;
+            let restaurantNavn = document.getElementById("header").textContent;
 
             if (restaurantNavn == restaurant.acf.restaurant_navn) {
-                console.log(restaurantNavn + " fundet");
+                console.log("Match: " + restaurantNavn + " fundet");
 
                 document.querySelector("[data-info]").innerHTML = restaurant.acf.om_restauranten;
                 document.querySelector("[data-address]").innerHTML = restaurant.acf.adresse;
@@ -63,69 +75,73 @@ async function hentRestaurant() {
                 let menukort = "menukort" + menuNr;
                 let menukortNavn = "navn_pa_menukort" + menuNr;
 
-                let menu1 = restaurant.acf.menukort1;
-                let menu2 = restaurant.acf.menukort2;
-                let menu3 = restaurant.acf.menukort3;
-                let menu4 = restaurant.acf.menukort4;
-                let menu5 = restaurant.acf.menukort5;
-                let menu6 = restaurant.acf.menukort6;
-                let menu7 = restaurant.acf.menukort7;
-                let menu8 = restaurant.acf.menukort8;
-                let menu9 = restaurant.acf.menukort9;
-                let menu10 = restaurant.acf.menukort10;
-
-                console.log(menukort)
-
                 indsaetMenukort(menukort, menukortNavn);
 
                 function indsaetMenukort(nr1, nr2) {
-                    console.log("indsæt");
                     let jsonLink = restaurant.acf[nr1];
                     info = restaurant;
-                    console.log(info);
 
                     if (jsonLink != "") {
 
                         //Indsæt HTML i variabel
-                        navHtml = navHtml + "<button onclick=\"navListener('" + nr1 + "')\" data-nav-" + menuNr + ">" + restaurant.acf[nr2] + "</button>";
+                        navHtml = navHtml + "<button onclick=\"navListener('" + menuNr + "')\" data-nav-" + menuNr + ">" + restaurant.acf[nr2] + "</button>";
 
                         function addListener() {
                             navListener(nr1);
                         }
-
-                        console.log(navHtml);
-
 
                         //Gør klar til næste menukort
                         menuNr++;
                         let menukort = "menukort" + menuNr;
                         let menukortNavn = "navn_pa_menukort" + menuNr;
                         indsaetMenukort(menukort, menukortNavn);
-                        console.log(menukort, menukortNavn);
 
                     } else {
-                        console.log("navHTML is: " + navHtml);
                         document.querySelector("[data-nav]").innerHTML = navHtml;
 
                         document.querySelector("[data-nav-om]").addEventListener("click", omHtml);
 
                         function omHtml() {
-                            console.log(restaurant.acf.om_restauranten);
                             document.querySelector("[data-info]").innerHTML = restaurant.acf.om_restauranten;
+                            highlightNav("om");
                         }
                     }
+                    document.querySelector("[data-nav-1]").addEventListener("click", () => {
+                        highlightNav("1")
+                    });
+                    document.querySelector("[data-nav-2]").addEventListener("click", () => {
+                        highlightNav("2")
+                    });
+                    document.querySelector("[data-nav-3]").addEventListener("click", () => {
+                        highlightNav("3")
+                    });
+                    document.querySelector("[data-nav-4]").addEventListener("click", () => {
+                        highlightNav("4")
+                    });
+                    document.querySelector("[data-nav-5]").addEventListener("click", () => {
+                        highlightNav("5")
+                    });
+                    document.querySelector("[data-nav-6]").addEventListener("click", () => {
+                        highlightNav("6")
+                    });
+                    document.querySelector("[data-nav-7]").addEventListener("click", () => {
+                        highlightNav("7")
+                    });
+                    document.querySelector("[data-nav-8]").addEventListener("click", () => {
+                        highlightNav("8")
+                    });
+                    document.querySelector("[data-nav-9]").addEventListener("click", () => {
+                        highlightNav("9")
+                    });
+                    document.querySelector("[data-nav-10]").addEventListener("click", () => {
+                        highlightNav("10")
+                    });
                 }
-                console.log(info);
-                //Navigationsmenu
-
-                //function navListener(data) {}
 
             } else {
-                console.log(restaurantNavn + " & " + restaurant.acf.restaurant_navn);
+                console.log("Intet match: " + restaurantNavn + " & " + restaurant.acf.restaurant_navn);
             }
         });
     }
-
-    //Galleri
 
 }
