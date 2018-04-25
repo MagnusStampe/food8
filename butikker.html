@@ -12,12 +12,16 @@
 
     <!-- indsæt søgefelt -->
 
-    <!-- Destination til template - Restauranter det skal hentes ind med json -->
-    <section id="restauranter" data-buti-dest></section>
+    <form action="/action_page.php">
 
-    <!-- indsæt google maps -->
+        <input type="text" name="søg" value="søg">
 
-    <template data-template>
+        <!-- Destination til template - Restauranter det skal hentes ind med json -->
+        <section id="restauranter" data-buti-dest></section>
+
+        <!-- indsæt google maps -->
+
+        <template data-template>
 
         <article data-menu>
 
@@ -27,8 +31,8 @@
 
     </template>
 
-    <footer></footer>
+        <footer></footer>
 
-    <script src="includes.js"></script>
+        <script src="includes.js"></script>
 </body>
 </html>
