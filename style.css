@@ -295,6 +295,10 @@ nav a img {
 
 }
 
+#tilmeld img {
+    width: 50%;
+}
+
 h1 {
     padding: 20px;
     font-family: 'Asap', sans-serif;
