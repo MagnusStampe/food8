@@ -26,6 +26,7 @@ a {
     text-align: center;
     font-family: 'Asap', sans-serif;
     text-decoration: underline;
+    padding: 20px;
 }
 
 p {
@@ -289,8 +290,9 @@ nav a img {
     position: relative;
 }
 
-.tilmeld {
+#tilmeld {
     padding: 20px;
+
 }
 
 h1 {
