@@ -1,30 +1,32 @@
-//henter json//
-async function start() {
-    let jsondata = await fetch("http://www.magnusstampe.dk/food8/wp/wp-json/acf/v3/butikker");
+document.addEventListener("DOMContentLoaded", loaded);
 
-    MinSlider = await jsondata.json();
-    console.log(MinSlider[0].acf.start_billedet_.url);
-    vis();
-
-
+function loaded() {
+    hentJson();
 }
 
-function vis() {
-    let dest = document.querySelector("[data-buti-dest]");
-    let temp = document.querySelector("[data-template]");
+//JSON
 
-    MinSlider.forEach(billeder => {
-        console.log(billeder.acf.start_billedet_.url);
-        let klon = temp.cloneNode(true).content;
+async function hentJson() {
+    let jsonData = await fetch("http://www.magnusstampe.dk/food8/wp/wp-json/acf/v3/butikker");
+    butikker = await jsonData.json();
 
-        //        //data i <div>
-        klon.querySelector("[data-buti-img]").src = billeder.acf.start_billedet_.url;
-        klon.querySelector("[data-buti-img]").alt = billeder.acf.start_billedet_.url;
-        dest.appendChild(klon);
+    console.log("Hent JSON")
+    vis();
 
+    function vis() {
+        console.log("vis()")
+        let dest = document.querySelector("[data-buti-dest]");
+        let temp = document.querySelector("[data-buti-temp]");
 
-        //
-    });
-    //
+        butikker.forEach(butik => {
 
+            let klon = temp.cloneNode(true).content;
+
+            klon.querySelector("[data-buti-h2]").innerHTML = butik.acf.butikkens_navn;
+            klon.querySelector("[data-buti-a]").href = butik.acf.link_navn + ".html";
+            klon.querySelector("[data-buti-img]").src = butik.acf.start_billedet_.url;
+            klon.querySelector("[data-buti-img]").alt = butik.acf.restaurant_navn;
+            dest.appendChild(klon);
+        });
+    }
 }
