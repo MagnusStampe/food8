@@ -7,6 +7,7 @@ Generel
     margin: 0;
 }
 
+
 body {
     padding-top: 100px;
     font-family: 'Asap', sans-serif;
@@ -34,9 +35,14 @@ p {
 .vin_knap,
 .slagter_knap {
     border: none;
-    background: none;
+    background-color: aliceblue;
     float: center;
+    margin: 2%;
+    border-radius: 9px;
+    width: 20vw;
+    height: 3vh;
 }
+
 
 
 /* Nyheder billeder */
@@ -47,12 +53,20 @@ p {
 
 form input {
     float: right;
+    margin: 2%;
+}
+
+.h1_butikker,
+.h1_restauranter {
+    text-align: center;
 }
 
 .img_container {
     position: relative;
     margin: 7vw;
 }
+
+
 
 .img_container:first-child {
     padding-top: 5vw;
@@ -313,7 +327,6 @@ nav a img {
 
 h1 {
     padding: 20px;
-    font-family: 'Asap', sans-serif;
 }
 
 h2 {
