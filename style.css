@@ -107,7 +107,7 @@ footer p {
 }
 
 footer img {
-    width: 10%;
+    width: 70px;
 }
 
 
@@ -126,8 +126,6 @@ header {
 
 header img {
     width: 170px;
-    margin: 10px;
-
 }
 
 #burger {
@@ -277,7 +275,7 @@ nav a img {
 
 
 #map {
-    width: 80vw;
+    width: 100;
     height: 50vw;
     background: burlywood;
     align-self: center;
