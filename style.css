@@ -281,6 +281,10 @@ nav a img {
     position: relative;
 }
 
+.tilmeld {
+    padding: 20px;
+}
+
 h1 {
     padding: 20px;
     font-family: 'Asap', sans-serif;
