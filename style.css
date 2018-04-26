@@ -16,12 +16,20 @@ img {
     width: 100%;
 }
 
+footer img {
+    width: 15%
+}
+
 a {
     text-decoration: none;
     color: black;
     text-align: center;
     font-family: 'Asap', sans-serif;
     text-decoration: underline;
+}
+
+p {
+    margin: 10px 0;
 }
 
 
@@ -115,7 +123,7 @@ header {
 }
 
 header img {
-    width: 150px;
+    width: 170px;
     margin: 10px;
 
 }

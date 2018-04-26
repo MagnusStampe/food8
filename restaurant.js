@@ -54,7 +54,10 @@ async function hentRestaurant() {
 
                 document.querySelector("[data-info]").innerHTML = restaurant.acf.om_restauranten;
                 document.querySelector("[data-address]").innerHTML = restaurant.acf.adresse;
-                document.querySelector("[data-nummer]").innerHTML = "Tlf: +45 " + restaurant.acf.nummer;
+                if (restaurant.acf.nummer != "") {
+                    document.querySelector("[data-nummer]").innerHTML = "Tlf: +45 " + restaurant.acf.nummer;
+                }
+                document.querySelector("[data-abningstider]").innerHTML = restaurant.acf.åbningstider;
 
                 //####
                 //infobox
@@ -94,7 +97,7 @@ async function hentRestaurant() {
                         indsaetMenukort(menukort, menukortNavn);
 
                     } else {
-                        document.querySelector("[data-nav]").innerHTML = navHtml;
+                        document.querySelector("[data-nav]").innerHTML = navHtml + "<button data-nav-kontrol>Kontrolrapport</button>";
                         document.querySelector("[data-nav-om]").style.color = "#111";
 
                         document.querySelector("[data-nav-om]").addEventListener("click", () => {
@@ -104,11 +107,24 @@ async function hentRestaurant() {
 
                             while (knapNr < menuNr) {
                                 document.querySelector("[data-nav-" + knapNr + "]").style.color = "#555";
-                                console.log(knapNr)
                                 knapNr++
                             }
+                            document.querySelector("[data-nav-kontrol]").style.color = "#555";
                             document.querySelector("[data-nav-om]").style.color = "#111";
                             document.querySelector("[data-info]").innerHTML = restaurant.acf.om_restauranten;
+                        });
+                        document.querySelector("[data-nav-kontrol]").addEventListener("click", () => {
+
+
+                            let knapNr = 1;
+
+                            while (knapNr < menuNr) {
+                                document.querySelector("[data-nav-" + knapNr + "]").style.color = "#555";
+                                knapNr++
+                            }
+                            document.querySelector("[data-nav-om]").style.color = "#555";
+                            document.querySelector("[data-nav-kontrol]").style.color = "#111";
+                            document.querySelector("[data-info]").innerHTML = "<a href='" + restaurant.acf.kontrolrapport + "' target='_blank'>" + restaurant.acf.kontrolrapport + "</a>";
                         });
                         document.querySelector("[data-nav-1]").addEventListener("click", () => {
                             highlightBut("1");
@@ -146,9 +162,9 @@ async function hentRestaurant() {
                             let knapNr = 1;
 
                             document.querySelector("[data-nav-om]").style.color = "#555";
+                            document.querySelector("[data-nav-kontrol]").style.color = "#555";
                             while (knapNr < menuNr) {
                                 document.querySelector("[data-nav-" + knapNr + "]").style.color = "#555";
-                                console.log(knapNr)
                                 knapNr++
                             }
                             document.querySelector("[data-nav-" + knap + "]").style.color = "#111";
