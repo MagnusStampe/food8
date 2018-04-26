@@ -7,6 +7,10 @@ let rest;
 //Database enkelte restaurant
 let restaurant;
 
+//Highlight farver
+let selectedColor = "#111";
+let notSelectedColor = "555";
+
 // Initial function
 document.addEventListener("DOMContentLoaded", loaded);
 
@@ -101,9 +105,6 @@ async function hentRestaurant() {
                         //#################################################
                         document.querySelector("[data-nav]").innerHTML = navHtml + "<button data-nav-kontrol>Kontrolrapport</button>";
 
-                        let selectedColor = "#111";
-                        let notSelectedColor = "555"
-
                         //Highlight "om"
                         document.querySelector("[data-nav-om]").style.color = selectedColor;
 
@@ -112,10 +113,10 @@ async function hentRestaurant() {
                             let knapNr = 1;
 
                             while (knapNr < menuNr) {
-                                document.querySelector("[data-nav-" + knapNr + "]").style.color = notSelectedColor;
+                                document.querySelector("[data-nav-" + knapNr + "]").style.color = "#555";
                                 knapNr++
                             }
-                            document.querySelector("[data-nav-kontrol]").style.color = notSelectedColor;
+                            document.querySelector("[data-nav-kontrol]").style.color = "#555";
                             document.querySelector("[data-nav-om]").style.color = selectedColor;
                             document.querySelector("[data-info]").innerHTML = restaurant.acf.om_restauranten;
                         });
@@ -125,10 +126,10 @@ async function hentRestaurant() {
                             let knapNr = 1;
 
                             while (knapNr < menuNr) {
-                                document.querySelector("[data-nav-" + knapNr + "]").style.color = notSelectedColor;
+                                document.querySelector("[data-nav-" + knapNr + "]").style.color = "#555";
                                 knapNr++
                             }
-                            document.querySelector("[data-nav-om]").style.color = notSelectedColor;
+                            document.querySelector("[data-nav-om]").style.color = "#555";
                             document.querySelector("[data-nav-kontrol]").style.color = selectedColor;
                             document.querySelector("[data-info]").innerHTML = "<a href='" + restaurant.acf.kontrolrapport + "' target='_blank'>" + restaurant.acf.kontrolrapport + "</a>";
                         });

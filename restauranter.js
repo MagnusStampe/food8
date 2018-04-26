@@ -25,6 +25,8 @@ async function hentJson() {
 
             klon.querySelector("[data-rest-h2]").innerHTML = restaurant.acf.restaurant_navn;
             klon.querySelector("[data-rest-a]").href = restaurant.acf.Link + ".html";
+            klon.querySelector("[data-rest-logo]").src = restaurant.acf.logo.url;
+            klon.querySelector("[data-rest-logo]").alt = restaurant.acf.restaurant_navn;
             klon.querySelector("[data-rest-img]").src = restaurant.acf.baggrundsbillede.url;
             klon.querySelector("[data-rest-img]").alt = restaurant.acf.restaurant_navn;
             console.log(restaurant.acf.baggrundsbillede);
