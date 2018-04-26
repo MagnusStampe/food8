@@ -8,16 +8,12 @@ Generel
 }
 
 body {
-    padding-top: 120px;
+    padding-top: 100px;
     font-family: 'Asap', sans-serif;
 }
 
 img {
     width: 100%;
-}
-
-footer img {
-    width: 15%
 }
 
 a {
@@ -30,7 +26,7 @@ a {
 }
 
 p {
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
 
@@ -102,14 +98,19 @@ Footer
 footer {
     background-color: beige;
     display: grid;
-    padding-left: 20px;
-    padding-bottom: 20px;
+    margin-top: 5vh;
+    padding: 2vw 0 2vw 2vw;
 }
 
 footer p {
-    padding-top: 2.5vw;
     font-size: 0.8em;
 }
+
+footer img {
+    width: 70px;
+}
+
+
 
 /*
 Header
@@ -125,8 +126,6 @@ header {
 
 header img {
     width: 170px;
-    margin: 10px;
-
 }
 
 #burger {
@@ -277,7 +276,7 @@ nav a img {
 
 
 #map {
-    width: 80vw;
+    width: 100;
     height: 50vw;
     background: burlywood;
     align-self: center;
@@ -373,4 +372,22 @@ h2 {
 
     padding: 15px;
     min-height: 500px;
+}
+
+
+
+/** index /**/
+
+main button {
+    border: none;
+    background: pink;
+    border-radius: 9px;
+    width: 50vw;
+    height: 3vh;
+    margin: 0vw 0 1vw 25%;
+
+}
+
+.forside_tekst {
+    margin: 27px;
 }
