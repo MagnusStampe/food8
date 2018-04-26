@@ -22,6 +22,7 @@ a {
     text-align: center;
     font-family: 'Asap', sans-serif;
     text-decoration: underline;
+    padding: 20px;
 }
 
 p {
@@ -290,6 +291,15 @@ nav a img {
     position: relative;
 }
 
+#tilmeld {
+    padding: 20px;
+
+}
+
+#tilmeld img {
+    width: 50%;
+}
+
 h1 {
     padding: 20px;
     font-family: 'Asap', sans-serif;
@@ -322,7 +332,7 @@ h2 {
 }
 
 #info {
-    background-color: #faf8cb;
+    background-color: beige;
 
     padding: 15px;
     min-height: 500px;
