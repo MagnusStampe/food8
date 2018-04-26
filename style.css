@@ -29,12 +29,24 @@ p {
     margin: 5px 0;
 }
 
+/* Nyheder knapper */
+
+.vin_knap,
+.slagter_knap {
+    border: none;
+    background: none;
+    float: center;
+}
 
 
 /* Nyheder billeder */
 
 .grid_container {
     display: grid;
+}
+
+form input {
+    float: right;
 }
 
 .img_container {
@@ -96,7 +108,7 @@ Footer
 */
 
 footer {
-    background-color: beige;
+    background-color: #D5D5D5;
     display: grid;
     margin-top: 5vh;
     padding: 2vw 0 2vw 2vw;
@@ -203,7 +215,7 @@ header nav.open #burger div:nth-child(3) {
 }
 
 #header_bar {
-    background-color: beige;
+    background-color: #C7D8C6;
     width: 100%;
     height: 100px;
     z-index: 110;
@@ -213,7 +225,7 @@ header nav.open #burger div:nth-child(3) {
 
 header nav {
     position: absolute;
-    background-color: beige;
+    background-color: #C7D8C6;
     left: -250px;
     top: 0;
 
@@ -342,7 +354,7 @@ h2 {
 
 main button {
     border: none;
-    background: pink;
+    background: #A9B7C0;
     border-radius: 9px;
     width: 50vw;
     height: 3vh;
