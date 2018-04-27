@@ -405,7 +405,7 @@ h2 {
 
 main button {
     border: none;
-    background: #A9B7C0;
+    background: #65C3B0;
     border-radius: 9px;
     width: 50vw;
     height: 3vh;
@@ -446,9 +446,6 @@ input[type=submit] {
     cursor: pointer;
 }
 
-input[type=submit]:hover {
-    background-color: #45a049;
-}
 
 
 .col a {
@@ -459,7 +456,7 @@ input[type=submit]:hover {
     width: 50%;
     margin: auto;
     padding: 3vw 3vw 3vw 3vw;
-    background-color: antiquewhite;
+    background-color: #334252;
 }
 
 
@@ -479,8 +476,8 @@ input[type=submit]:hover {
     left: 35%;
     font-size: 1em;
     padding: 5px;
-    color: black;
-    background-color: antiquewhite;
+    color: white;
+    background-color: #334252;
     border-radius: 20px/50px;
     text-decoration: none;
     cursor: pointer;
@@ -489,7 +486,7 @@ input[type=submit]:hover {
 }
 
 .button:hover {
-    background: lightblue;
+    background: #65C3B0;
 }
 
 .overlay {
