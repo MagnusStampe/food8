@@ -9,8 +9,13 @@ Generel
 
 
 body {
-    padding-top: 100px;
+    padding-top: 80px;
     font-family: 'Asap', sans-serif;
+}
+
+
+.body_index {
+    padding-top: 310px;
 }
 
 img {
@@ -20,14 +25,7 @@ img {
 a {
     text-decoration: none;
     color: black;
-    text-align: center;
-    font-family: 'Asap', sans-serif;
     text-decoration: underline;
-    padding: 20px;
-}
-
-p {
-    margin: 5px 0;
 }
 
 /* Nyheder knapper */
@@ -130,6 +128,7 @@ footer {
 
 footer p {
     font-size: 0.8em;
+    padding-top: 2vw;
 }
 
 footer img {
@@ -286,6 +285,7 @@ nav a img {
 }
 
 .guides_knap {
+    margin-top: 35px;
     border: solid;
     background: none;
 }
@@ -415,4 +415,142 @@ main button {
 
 .forside_tekst {
     margin: 27px;
+}
+
+
+/* Om Food8*/
+
+.col input,
+.btn {
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    margin: 7px 0;
+    opacity: 0.85;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 30px;
+    text-decoration: none;
+}
+
+input:hover,
+.btn:hover {
+    opacity: 1;
+}
+
+
+
+input[type=submit] {
+    background-color: lightblue;
+    color: white;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+
+.col a {
+    font-size: 0.7em;
+}
+
+.col {
+    width: 50%;
+    margin: auto;
+    padding: 3vw 3vw 3vw 3vw;
+    background-color: antiquewhite;
+}
+
+
+
+/ @media screen and (max-width: 650px) {
+    .col {
+        width: 100%;
+        margin-top: 0;
+    }
+
+}
+
+
+.button {
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    font-size: 1em;
+    padding: 5px;
+    color: black;
+    background-color: antiquewhite;
+    border-radius: 20px/50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    font-size: 0.8em;
+}
+
+.button:hover {
+    background: lightblue;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 150px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 5px;
+    width: 42%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover {
+    color: #06D85F;
+}
+
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+    padding-top: 2vw;
+    font-size: 0.8em;
+}
+
+.popup h2 {
+    font-size: 1em;
+}
+
+@media screen and (max-width: 700px) {
+    .box {
+        width: 70%;
+    }
+    .popup {
+        width: 70%;
+    }
 }
