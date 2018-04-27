@@ -37,6 +37,7 @@ img {
     max-width: 100%;
     position: relative;
     margin: auto;
+    height: 70vw;
 }
 
 /* Next & previous buttons */
