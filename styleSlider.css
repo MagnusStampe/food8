@@ -3,9 +3,11 @@
 }
 
 body {
-    font-family: Verdana, sans-serif;
+
     margin: 0
 }
+
+
 
 .mySlides {
     display: none;
@@ -37,7 +39,7 @@ img {
     max-width: 100%;
     position: relative;
     margin: auto;
-    height: 70vw;
+    height: 62vw;
 }
 
 /* Next & previous buttons */

@@ -3,14 +3,16 @@ Generel
 */
 
 * {
-    font-family: 'Asap', sans-serif;
     margin: 0;
 }
 
+h1 {
+    font-family: 'Kaushan Script', cursive;
+}
 
 body {
     padding-top: 80px;
-    font-family: 'Asap', sans-serif;
+    font-family: 'Muli', sans-serif;
 }
 
 
@@ -26,6 +28,10 @@ a {
     text-decoration: none;
     color: black;
     text-decoration: underline;
+}
+
+p {
+    font-family: 'Muli', sans-serif;
 }
 
 /* Nyheder knapper */
@@ -54,10 +60,7 @@ form input {
     margin: 2%;
 }
 
-.h1_butikker,
-.h1_restauranter {
-    text-align: center;
-}
+
 
 .img_container {
     position: relative;
@@ -120,7 +123,7 @@ Footer
 */
 
 footer {
-    background-color: #D5D5D5;
+    background-color: #C2CAD0;
     display: grid;
     margin-top: 5vh;
     padding: 2vw 0 2vw 2vw;
@@ -151,6 +154,7 @@ header {
 
 header img {
     width: 170px;
+    padding-top: 10px;
 }
 
 #burger {
@@ -229,7 +233,7 @@ header nav.open #burger div:nth-child(3) {
 }
 
 #header_bar {
-    background-color: #C7D8C6;
+    background-color: #C2CAD0;
     width: 100%;
     height: 100px;
     z-index: 110;
@@ -239,7 +243,7 @@ header nav.open #burger div:nth-child(3) {
 
 header nav {
     position: absolute;
-    background-color: #C7D8C6;
+    background-color: #C2CAD0;
     left: -250px;
     top: 0;
 
@@ -325,13 +329,6 @@ nav a img {
     width: 50%;
 }
 
-h1 {
-    padding: 20px;
-}
-
-h2 {
-    font-family: 'Asap', sans-serif;
-}
 
 /* Restauranter */
 
@@ -352,6 +349,7 @@ h2 {
     display: block;
 }
 
+
 #restauranter article .rest_logo {
     position: absolute;
     width: 100px;
@@ -363,7 +361,7 @@ h2 {
 
 #restauranter article .fade {
     position: absolute;
-    bottom: 15px;
+    bottom: 0px;
     left: 0;
     width: 100%;
     height: 200px;
@@ -405,13 +403,27 @@ h2 {
 
 main button {
     border: none;
-    background: #65C3B0;
+    background: #AFD275;
     border-radius: 9px;
     width: 50vw;
     height: 3vh;
     margin: 0vw 0 1vw 25%;
+    cursor: pointer;
 
 }
+
+main button:hover {
+    background-color: #AFD995;
+}
+
+.kasse {
+    background-color: #C2B9B0;
+    padding: 15px;
+    padding-top: 15px;
+    margin-top: -4px;
+    position: relative;
+}
+
 
 .forside_tekst {
     margin: 27px;
@@ -431,6 +443,7 @@ main button {
     font-size: 17px;
     line-height: 30px;
     text-decoration: none;
+
 }
 
 input:hover,
@@ -441,12 +454,14 @@ input:hover,
 
 
 input[type=submit] {
-    background-color: lightblue;
+    background-color: #AFD275;
     color: white;
     cursor: pointer;
 }
 
-
+input[type=submit]:hover {
+    background-color: #7E685A;
+}
 
 .col a {
     font-size: 0.7em;
@@ -456,7 +471,7 @@ input[type=submit] {
     width: 50%;
     margin: auto;
     padding: 3vw 3vw 3vw 3vw;
-    background-color: #334252;
+    background-color: #C2B9B0;
 }
 
 
@@ -477,7 +492,7 @@ input[type=submit] {
     font-size: 1em;
     padding: 5px;
     color: white;
-    background-color: #334252;
+    background-color: #AFD275;
     border-radius: 20px/50px;
     text-decoration: none;
     cursor: pointer;
@@ -486,7 +501,7 @@ input[type=submit] {
 }
 
 .button:hover {
-    background: #65C3B0;
+    background: #AFD299;
 }
 
 .overlay {
@@ -534,7 +549,6 @@ input[type=submit] {
 
 .popup .content {
     max-height: 30%;
-    overflow: auto;
     padding-top: 2vw;
     font-size: 0.8em;
 }
@@ -544,9 +558,6 @@ input[type=submit] {
 }
 
 @media screen and (max-width: 700px) {
-    .box {
-        width: 70%;
-    }
     .popup {
         width: 70%;
     }
