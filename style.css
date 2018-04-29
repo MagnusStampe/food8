@@ -8,6 +8,7 @@ Generel
 
 h1 {
     font-family: 'Kaushan Script', cursive;
+    padding-top: 15px;
 }
 
 body {
@@ -22,6 +23,7 @@ body {
 
 img {
     width: 100%;
+
 }
 
 a {
@@ -135,7 +137,7 @@ footer p {
 }
 
 footer img {
-    width: 70px;
+    width: 100px;
 }
 
 
@@ -155,6 +157,17 @@ header {
 header img {
     width: 170px;
     padding-top: 10px;
+
+
+}
+
+.logo img {
+    bottom: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    bottom: 20px;
+    position: relative;
+    margin-left: 10px;
 }
 
 #burger {
