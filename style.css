@@ -8,7 +8,7 @@ Generel
 
 h1 {
     font-family: 'Kaushan Script', cursive;
-    padding-top: 15px;
+    padding-top: 17px;
 }
 
 body {
@@ -51,50 +51,7 @@ p {
 
 
 
-/* Nyheder billeder */
 
-.grid_container {
-    display: grid;
-}
-
-form input {
-    float: right;
-    margin: 2%;
-}
-
-
-
-.img_container {
-    position: relative;
-    margin: 7vw;
-}
-
-
-
-.img_container:first-child {
-    padding-top: 5vw;
-}
-
-.img_container img {
-    width: 100%;
-}
-
-
-.img_container p {
-    position: absolute;
-    color: white;
-    z-index: 3;
-    bottom: 1em;
-    left: 10px;
-}
-
-.img_container h3 {
-    position: absolute;
-    color: white;
-    z-index: 3;
-    bottom: 2em;
-    left: 10px;
-}
 
 
 /* restaurant billeder */
@@ -316,6 +273,37 @@ nav a img {
     border: none;
     background: none;
 }
+
+.overskrift {
+    position: relative;
+    color: white;
+    top: 30px;
+    margin-left: 10px;
+    background-color: font-family: 'Muli', sans-serif;
+    background-color: #b5bbbf;
+    margin-right: 150px;
+    text-decoration-color: aqua;
+
+
+
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.nyhed_knap,
+.guides_knap {
+    background-color: aliceblue;
+}
+
+.tilmeld_knap button {
+    border-radius: black 20px;
+    background-color: #AFD275;
+
+}
+
 
 
 #map {
