@@ -86,11 +86,13 @@ footer {
     display: grid;
     margin-top: 5vh;
     padding: 2vw 0 2vw 2vw;
+    font-family: 'Muli', sans-serif;
 }
 
 footer p {
     font-size: 0.8em;
     padding-top: 2vw;
+    font-family: 'Muli', sans-serif;
 }
 
 footer img {
@@ -279,7 +281,7 @@ nav a img {
     color: white;
     top: 30px;
     margin-left: 10px;
-    background-color: font-family: 'Muli', sans-serif;
+    font-family: 'Muli', sans-serif;
     background-color: #b5bbbf;
     margin-right: 150px;
     text-decoration-color: aqua;
@@ -304,7 +306,15 @@ a {
 
 }
 
+.nyhed {
+    padding: 20px;
+    position: relative;
+    font-family: 'Muli', sans-serif;
+}
 
+p {
+    font-family: 'Muli', sans-serif;
+}
 
 #map {
     width: 100;
