@@ -36,6 +36,10 @@ p {
     font-family: 'Muli', sans-serif;
 }
 
+#header {
+    margin-top: 50px;
+}
+
 /* Nyheder knapper */
 
 .vin_knap,
@@ -429,9 +433,6 @@ main button:hover {
 .kasse {
     background-color: #C2B9B0;
     padding: 15px;
-    padding-top: 15px;
-    margin-top: -4px;
-    position: relative;
 }
 
 
@@ -579,4 +580,24 @@ input[type=submit]:hover {
     .popup {
         width: 70%;
     }
+}
+
+
+.tilbage {
+    position: absolute;
+    top: 120px
+}
+
+form input {
+    float: right;
+    margin-top: 15px
+}
+
+
+.bookbord {
+    display: none;
+}
+
+.bookbord .open_bookbord {
+    display: block;
 }
