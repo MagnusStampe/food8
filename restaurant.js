@@ -79,6 +79,7 @@ async function hentRestaurant() {
                 //Ret headerens farve til restaurantens farve
                 document.querySelector("#header_bar").style.backgroundColor = restaurant.acf.farve;
                 document.querySelector("header nav").style.backgroundColor = restaurant.acf.farve;
+                document.querySelector("#header_bar img").style.width = "80px";
 
                 indsaetMenukort(menukort, menukortNavn);
 
