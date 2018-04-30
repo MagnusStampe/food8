@@ -473,15 +473,13 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #7E685A;
 }
-
 .col a {
     font-size: 0.7em;
 }
 
 .col {
-    width: 50%;
-    max-width: 300px;
-    margin: auto;
+    width: 350px;
+    margin: 0 auto;
     padding: 3vw 3vw 3vw 3vw;
     background-color: #C2B9B0;
 }
@@ -581,6 +579,8 @@ input[type=submit]:hover {
         width: 70%;
     }
 }
+
+
 
 
 .tilbage {
