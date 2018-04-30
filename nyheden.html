@@ -6,18 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food8 - Nyheder</title>
     <link rel="stylesheet" href="style.css">
-       <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 
 </head>
 
-<body>
+<body class="buttonnyheder">
     <header></header>
 
+    <a class="tilbage" href="nyheder.html">&#8656; Tilbage</a>
+    <div class="box1">
+        <a class="button1" href="#popup1">Tilmeld Nyhedsbrev</a>
 
-    <button class="nyhed_knap">Nyhed</button>
-    <button class="guides_knap">Guides</button>
-    <form action="nyhedsbrev.html" class="tilmeld_knap"><button>Tilmeld nyhedsbrev</button></form>
+    </div>
+
+    <div id="popup1" class="overlay1">
+        <div class="popup1">
+            <h2>Tilmeld nyhedsbrev</h2>
+            <p>Skriv dig op til vores nyhedsbrev og få ugentlige guides og nyheder om food8s deltagende steder.</p>
+            <a class="close1" href="#">&times;</a>
+            <div class="content1">
+                <div class="col1">
+                    <input type="text" name="navn" placeholder="Navn" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input class="tilmeld" type="tilmeld" value="Tilmeld">
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
