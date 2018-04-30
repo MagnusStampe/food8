@@ -40,6 +40,10 @@ p {
     margin-top: 50px;
 }
 
+.hide {
+    display: none;
+}
+
 /* Nyheder knapper */
 
 .vin_knap,
@@ -52,7 +56,9 @@ p {
     height: 3vh;
 }
 
-
+.buttonnyheder {
+    margin-top: 70px;
+}
 
 
 
@@ -78,6 +84,16 @@ p {
     color: black;
     z-index: 3;
     padding: 20px;
+}
+
+.buttonkort,
+.buttonliste {
+    margin-top: 30px;
+    margin-right: 10px;
+    float: right;
+    border: none;
+    background-color: beige;
+    cursor: pointer;
 }
 
 /*
@@ -345,6 +361,11 @@ p {
 
 /* Restauranter */
 
+#map {
+    margin: 60px;
+}
+
+
 #restauranter article {
     position: relative;
 }
@@ -431,7 +452,13 @@ main button:hover {
 
 .kasse {
     background-color: #C2B9B0;
-    padding: 15px;
+    padding: 10px 0px 10px 20px;
+}
+
+.kasse1 {
+    background-color: #C2B9B0;
+    padding: 0px 0px 9px 20px;
+    margin-top: -5px;
 }
 
 
@@ -472,6 +499,7 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #7E685A;
 }
+
 .col a {
     font-size: 0.7em;
 }
@@ -587,6 +615,7 @@ input[type=submit]:hover {
     top: 120px
 }
 
+
 form input {
     float: right;
     margin-top: 15px
@@ -656,7 +685,7 @@ input[type=submit]:hover {
 
 
 / @media screen and (max-width: 650px) {
-    .col {
+    .col1 {
         width: 100%;
         margin-top: 0;
     }

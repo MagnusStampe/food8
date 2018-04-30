@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food8 - Restauranter</title>
     <link rel="stylesheet" href="style.css">
-       <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 
 
@@ -18,10 +18,14 @@
     <!-- indsæt søgefelt -->
 
     <!-- Destination til template - Restauranter -->
-    <h1>Restauranter</h1>
-    <section id="restauranter" data-rest-dest></section>
+    <button class="buttonkort">Kort</button>
+    <button class="buttonliste">Liste</button>
 
-    <template data-rest-temp>
+    <div id="liste">
+        <h1>Restauranter</h1>
+        <section id="restauranter" data-rest-dest></section>
+
+        <template data-rest-temp>
 
         <article data-rest-article>
             <a href="" data-rest-a>
@@ -33,10 +37,10 @@
         </article>
 
     </template>
-    <div id="map">
-
-
     </div>
+    <div id="map">
+    </div>
+
     <script>
         let map;
 
@@ -120,8 +124,11 @@
             });
 
         }
+
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArX-jPuUGnALQVkrzWT8bHB8tvfJGly3I&callback=initMap">
+
+
     </script>
     <footer></footer>
 
