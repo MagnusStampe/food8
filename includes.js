@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", loaded);
 function loaded() {
     hentHeader();
     hentFooter();
-    start();
+
 };
 
 //Header

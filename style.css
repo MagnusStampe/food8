@@ -8,6 +8,7 @@ Generel
 
 h1 {
     font-family: 'Kaushan Script', cursive;
+    padding-top: 17px;
 }
 
 body {
@@ -22,6 +23,7 @@ body {
 
 img {
     width: 100%;
+
 }
 
 a {
@@ -49,50 +51,7 @@ p {
 
 
 
-/* Nyheder billeder */
 
-.grid_container {
-    display: grid;
-}
-
-form input {
-    float: right;
-    margin: 2%;
-}
-
-
-
-.img_container {
-    position: relative;
-    margin: 7vw;
-}
-
-
-
-.img_container:first-child {
-    padding-top: 5vw;
-}
-
-.img_container img {
-    width: 100%;
-}
-
-
-.img_container p {
-    position: absolute;
-    color: white;
-    z-index: 3;
-    bottom: 1em;
-    left: 10px;
-}
-
-.img_container h3 {
-    position: absolute;
-    color: white;
-    z-index: 3;
-    bottom: 2em;
-    left: 10px;
-}
 
 
 /* restaurant billeder */
@@ -127,15 +86,17 @@ footer {
     display: grid;
     margin-top: 5vh;
     padding: 2vw 0 2vw 2vw;
+    font-family: 'Muli', sans-serif;
 }
 
 footer p {
     font-size: 0.8em;
     padding-top: 2vw;
+    font-family: 'Muli', sans-serif;
 }
 
 footer img {
-    width: 70px;
+    width: 100px;
 }
 
 
@@ -155,6 +116,17 @@ header {
 header img {
     width: 170px;
     padding-top: 10px;
+
+
+}
+
+.logo img {
+    bottom: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    bottom: 20px;
+    position: relative;
+    margin-left: 10px;
 }
 
 #burger {
@@ -304,6 +276,44 @@ nav a img {
     background: none;
 }
 
+.overskrift {
+    position: relative;
+    color: white;
+    top: 30px;
+    margin-left: 10px;
+    font-family: 'Muli', sans-serif;
+    background-color: #b5bbbf;
+    margin-right: 15vw;
+
+
+
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.nyhed_knap,
+.guides_knap {
+    background-color: aliceblue;
+}
+
+.tilmeld_knap button {
+    border-radius: black 20px;
+    background-color: #AFD275;
+
+}
+
+.nyhed {
+    padding: 20px;
+    position: relative;
+    font-family: 'Muli', sans-serif;
+}
+
+p {
+    font-family: 'Muli', sans-serif;
+}
 
 #map {
     width: 100;
@@ -469,6 +479,7 @@ input[type=submit]:hover {
 
 .col {
     width: 50%;
+    max-width: 300px;
     margin: auto;
     padding: 3vw 3vw 3vw 3vw;
     background-color: #C2B9B0;
@@ -487,8 +498,10 @@ input[type=submit]:hover {
 
 .button {
     position: absolute;
-    top: 35%;
+    bottom: 30px;
     left: 35%;
+    width: 30%;
+    text-align: center;
     font-size: 1em;
     padding: 5px;
     color: white;
@@ -504,6 +517,10 @@ input[type=submit]:hover {
     background: #AFD299;
 }
 
+.box {
+    position: relative;
+}
+
 .overlay {
     position: fixed;
     top: 0;
@@ -514,6 +531,7 @@ input[type=submit]:hover {
     transition: opacity 500ms;
     visibility: hidden;
     opacity: 0;
+    z-index: 200;
 }
 
 .overlay:target {
@@ -544,7 +562,7 @@ input[type=submit]:hover {
 }
 
 .popup .close:hover {
-    color: #06D85F;
+    color: grey;
 }
 
 .popup .content {

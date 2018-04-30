@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded", start);
+
 async function start() {
     let jsondata = await fetch("http://magnusstampe.dk/food8/wp/wp-json/wp/v2/butikker");
 
@@ -25,7 +27,7 @@ function vis() {
         klon.querySelector("[data-buti-img]").src = billeder.acf.billede1.url;
         klon.querySelector("[data-buti-img]").alt = billeder.acf.billede1.url;
         dest.appendChild(klon);
-        //
+        //denne kode skal link til Re document.querySelector("[data-ny-a]").href = "nyheden.html?id=" + nyhed.id;
     });
 
     MinSlider2.forEach(billeder => {
