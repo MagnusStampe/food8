@@ -47,7 +47,6 @@ p {
     border: none;
     background-color: aliceblue;
     float: center;
-    margin: 2%;
     border-radius: 9px;
     width: 20vw;
     height: 3vh;
@@ -260,7 +259,7 @@ nav a img {
 
 .nyhed_knap {
     background: none;
-    margin-left: 30px;
+    margin-left: 3px;
     border: solid;
 }
 
@@ -593,6 +592,7 @@ form input {
     margin-top: 15px
 }
 
+/* book bord */
 
 .bookbord {
     display: none;
@@ -600,4 +600,156 @@ form input {
 
 .bookbord.open_bookbord {
     display: block;
+}
+
+
+/* Tilmeld nyhedsbrev */
+
+.col1 input,
+.btn1 {
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    margin: 7px 0;
+    padding-left: 5px;
+    opacity: 0.85;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 30px;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.tilmeld {
+    background-color: brown;
+}
+
+input:hover,
+.btn1:hover {
+    opacity: 1;
+}
+
+
+
+input[type=submit] {
+    background-color: #AFD275;
+    color: white;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #7E685A;
+}
+
+.col1 a {
+    font-size: 0.7em;
+}
+
+.col1 {
+    width: 70%;
+    max-width: 300px;
+    margin: auto;
+    padding: 3vw 4vw 3vw 3vw;
+    background-color: beige;
+}
+
+
+
+/ @media screen and (max-width: 650px) {
+    .col {
+        width: 100%;
+        margin-top: 0;
+    }
+
+}
+
+
+.button1 {
+    float: right;
+    width: 120px;
+    margin-top: -25px;
+    text-align: center;
+    font-size: 1em;
+    padding: 5px;
+    color: white;
+    background-color: #AFD275;
+    border-radius: 20px/50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    font-size: 0.8em;
+}
+
+.button1:hover {
+    background: #AFD299;
+}
+
+.box1 {
+    position: relative;
+}
+
+.overlay1 {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 200;
+}
+
+.overlay1:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup1 {
+    margin: 150px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 5px;
+    width: 42%;
+    position: relative;
+    transition: all 5s ease-in-out;
+    background-color: beige;
+}
+
+
+.popup1 .close1 {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup1 .close1:hover {
+    color: grey;
+}
+
+.popup1 .content1 {
+    max-height: 30%;
+    padding-top: 2vw;
+    font-size: 0.8em;
+}
+
+.popup1 h2 {
+    font-size: 1em;
+    margin: 10px 0px 10px 0px;
+}
+
+@media screen and (max-width: 700px) {
+    .popup1 {
+        width: 70%;
+    }
+}
+
+.popup1 p {
+    font-size: 0.7em;
 }
