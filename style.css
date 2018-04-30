@@ -18,7 +18,7 @@ body {
 
 
 .body_index {
-    padding-top: 100px;
+    padding-top: 80px;
 }
 
 img {
@@ -50,10 +50,11 @@ p {
 .slagter_knap {
     border: none;
     background-color: aliceblue;
-    float: center;
     border-radius: 9px;
-    width: 20vw;
-    height: 3vh;
+    width: 50px;
+    height: 20px;
+    margin-top: 50px;
+    margin-left: 5px;
 }
 
 .buttonnyheder {
@@ -88,13 +89,14 @@ p {
 
 .buttonkort,
 .buttonliste {
-    margin-top: 30px;
+    margin-top: 55px;
     margin-right: 10px;
     float: right;
     border: none;
     background-color: beige;
     cursor: pointer;
 }
+
 
 /*
 Footer
@@ -335,12 +337,12 @@ p {
 }
 
 #map {
-    width: 100;
+    width: 1000;
     height: 50vw;
-    background: burlywood;
-    align-self: center;
+}
 
-    padding: 20px;
+iframe {
+    margin-top: 20px;
 }
 
 .om {
@@ -362,7 +364,12 @@ p {
 /* Restauranter */
 
 #map {
-    margin: 60px;
+    margin: 10px;
+    height: 70vw;
+}
+
+#kort {
+    height: 75vh;
 }
 
 
@@ -400,6 +407,10 @@ p {
     width: 100%;
     height: 200px;
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+
+#restauranter {
+    margin-top: 20px;
 }
 
 /* Restaurant */
@@ -526,7 +537,7 @@ input[type=submit]:hover {
     position: absolute;
     bottom: 30px;
     left: 35%;
-    width: 30%;
+    width: 35%;
     text-align: center;
     font-size: 1em;
     padding: 5px;
@@ -612,13 +623,14 @@ input[type=submit]:hover {
 
 .tilbage {
     position: absolute;
-    top: 120px
+    top: 120px;
 }
 
 
-form input {
-    float: right;
-    margin-top: 15px
+.seek {
+    position: absolute;
+    top: 105px;
+    right: 7px;
 }
 
 /* book bord */
@@ -781,4 +793,13 @@ input[type=submit]:hover {
 
 .popup1 p {
     font-size: 0.7em;
+}
+
+
+
+/* Nyhed */
+
+.nyhed p {
+    margin: 10px 0;
+    line-height: 1.5em;
 }

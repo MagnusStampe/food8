@@ -41,15 +41,20 @@ async function hentJson() {
 
         function visListe() {
             document.querySelector("#liste").classList.remove("hide");
-            document.querySelector("#map").classList.add("hide");
+            document.querySelector("#kort").classList.add("hide");
+            document.querySelector(".buttonliste").style.backgroundColor = "blue";
+            document.querySelector(".buttonkort").style.backgroundColor = "beige";
+
         }
 
         document.querySelector(".buttonkort").addEventListener("click", visMap);
 
 
         function visMap() {
-            document.querySelector("#map").classList.remove("hide");
+            document.querySelector("#kort").classList.remove("hide");
             document.querySelector("#liste").classList.add("hide");
+            document.querySelector(".buttonliste").style.backgroundColor = "beige";
+            document.querySelector(".buttonkort").style.backgroundColor = "blue";
         }
     }
 }

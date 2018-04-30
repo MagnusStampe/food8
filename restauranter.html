@@ -13,9 +13,9 @@
 </head>
 
 <body>
+    <input class="seek" type="text" name="søg" value="søg">
     <header></header>
 
-    <!-- indsæt søgefelt -->
 
     <!-- Destination til template - Restauranter -->
     <button class="buttonkort">Kort</button>
@@ -38,8 +38,12 @@
 
     </template>
     </div>
-    <div id="map">
+    <div id="kort">
+        <h1>Kort</h1>
+        <div id="map">
+        </div>
     </div>
+
 
     <script>
         let map;
@@ -116,19 +120,14 @@
                 title: "Fleisch",
                 map: map
             });
-            let infowindow = new google.maps.InfoWindow({
-                content: "<h2>Home</h2> <p>Her bor jeg </p>"
-            });
+            let infowindow = new google.maps.InfoWindow({});
             marker.addListener("click", () => {
                 infowindow.open(map, marker);
             });
 
         }
-
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArX-jPuUGnALQVkrzWT8bHB8tvfJGly3I&callback=initMap">
-
-
     </script>
     <footer></footer>
 

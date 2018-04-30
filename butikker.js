@@ -31,4 +31,21 @@ async function hentJson() {
             dest.appendChild(klon);
         });
     }
+
+    visListe();
+    document.querySelector(".buttonliste").addEventListener("click", visListe);
+
+
+    function visListe() {
+        document.querySelector("#liste").classList.remove("hide");
+        document.querySelector("#map").classList.add("hide");
+    }
+
+    document.querySelector(".buttonkort").addEventListener("click", visMap);
+
+
+    function visMap() {
+        document.querySelector("#map").classList.remove("hide");
+        document.querySelector("#liste").classList.add("hide");
+    }
 }

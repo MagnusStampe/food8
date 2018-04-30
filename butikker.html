@@ -14,24 +14,22 @@
 <body>
     <header></header>
 
-    <!-- indsæt søgefelt -->
-
-    <h1 class="h1_butikker">Butikker</h1>
-    <form action="/action_page.php">
-
-        <input type="text" name="søg" value="søg">
-    </form>
+    <input class="seek" type="text" name="søg" value="søg">
 
 
-    <button class="vin_knap">Vin</button>
-    <button class="slagter_knap">Slagter</button>
+    <h1>Butikker</h1>
 
-    <!-- Destination til template - Restauranter det skal hentes ind med json -->
-    <section id="restauranter" data-buti-dest></section>
+    <button class="buttonkort">Kort</button>
+    <button class="buttonliste">Liste</button>
+    <div id="liste"><button class="vin_knap">Vin</button>
+        <button class="slagter_knap">Slagter</button>
 
-    <!-- indsæt google maps -->
+        <!-- Destination til template - Restauranter det skal hentes ind med json -->
+        <section id="restauranter" data-buti-dest></section>
 
-    <template data-buti-temp>
+        <!-- indsæt google maps -->
+
+        <template data-buti-temp>
 
         <article data-buti-article>
             <a href="" data-buti-a>
@@ -40,6 +38,7 @@
         </article>
 
     </template>
+    </div>
     <div id="map">
 
 
