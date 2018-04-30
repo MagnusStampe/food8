@@ -65,6 +65,12 @@ async function hentRestaurant() {
                 document.querySelector("[data-abningstider]").innerHTML = restaurant.acf.åbningstider;
 
 
+                document.querySelector("[data-book-btn]").addEventListener("click", bookBord)
+
+                function bookBord() {
+                    document.querySelector(".bookbord").classList.toggle("open_bookbord");
+                }
+
                 //##################################
                 //NAV HTML - Samling af HTML til NAV
                 //##################################
@@ -181,6 +187,8 @@ async function hentRestaurant() {
 
                             document.querySelector("[data-info]").innerHTML = restaurant.acf["menukort" + knap];
                         }
+
+
                     }
                 }
 
