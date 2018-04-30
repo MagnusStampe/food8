@@ -25,7 +25,7 @@ function vis() {
         klon.querySelector("[data-buti-img]").src = billeder.acf.billede1.url;
         klon.querySelector("[data-buti-img]").alt = billeder.acf.billede1.url;
         dest.appendChild(klon);
-        //
+        //denne kode skal like til Re document.querySelector("[data-ny-a]").href = "nyheden.html?id=" + nyhed.id;
     });
 
     MinSlider2.forEach(billeder => {
