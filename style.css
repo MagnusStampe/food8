@@ -598,6 +598,6 @@ form input {
     display: none;
 }
 
-.bookbord .open_bookbord {
+.bookbord.open_bookbord {
     display: block;
 }

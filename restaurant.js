@@ -39,6 +39,10 @@ async function hentRestaurant() {
         jsonInput();
 
     }
+    document.querySelector("[data-book-btn]").addEventListener("click", () => {
+
+        document.querySelector(".bookbord").classList.toggle("open_bookbord");
+    });
 
     //###############################
     //JSON - Indsæt JSONs HTML i HTML
@@ -63,13 +67,6 @@ async function hentRestaurant() {
                 }
                 //Indsæt åbningstider
                 document.querySelector("[data-abningstider]").innerHTML = restaurant.acf.åbningstider;
-
-
-                document.querySelector("[data-book-btn]").addEventListener("click", bookBord)
-
-                function bookBord() {
-                    document.querySelector(".bookbord").classList.toggle("open_bookbord");
-                }
 
                 //##################################
                 //NAV HTML - Samling af HTML til NAV
