@@ -440,8 +440,6 @@ p {
 
 #info_box {
     margin: 10px;
-    background-color: #99e0db;
-    padding: 10px 0;
 }
 
 #info p {
@@ -468,10 +466,7 @@ p {
 }
 
 #info_box nav {
-    background-color: #ffffff;
-    display: flex;
-    justify-content: center;
-    margin: 0 10px 0 10px;
+    background-color: #8c8ec3;
 }
 
 #info_box nav button {
@@ -479,15 +474,12 @@ p {
     border: none;
     color: #444;
     font-weight: 700;
-    text-align: left;
-    flex-wrap: wrap;
-    flex-basis: 100px;
-    margin: 0 20px;
+    margin: 0 15%;
+    width: 70%;
 }
 
 #info {
     background-color: beige;
-    margin: 0 10px 0px 10px;
     padding: 15px;
 }
 

@@ -121,8 +121,8 @@ async function hentRestaurant() {
                 document.querySelector("#header_bar img").src = restaurant.acf.logo.url;
                 document.querySelector("#header_bar img").alt = restaurant.acf.restaurantens_navn;
                 //Ret headerens farve til restaurantens farve
-                document.querySelector("#header_bar").style.backgroundColor = restaurant.acf.farve;
-                document.querySelector("header nav").style.backgroundColor = restaurant.acf.farve;
+                document.querySelector("#header_bar").style.background = restaurant.acf.farve;
+                document.querySelector("header nav").style.background = restaurant.acf.farve;
                 document.querySelector("#header_bar img").style.width = "80px";
 
                 indsaetMenukort(menukort, menukortNavn);
