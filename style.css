@@ -272,13 +272,6 @@ header nav {
     transition: 0.5s;
 }
 
-#info_box nav {
-    display: flex;
-    justify-content: center;
-    padding: 20px 10px 20px 0px;
-    width: 100%;
-}
-
 header nav.open {
     left: 0;
 }
@@ -442,14 +435,12 @@ p {
     margin-top: 50px;
 }
 
-0
 /* Restaurant */
 
 #info_box {
     margin: 10px;
-    padding: 10px;
     background-color: #99e0db;
-
+    padding: 10px 0;
 }
 
 #info p {
@@ -477,7 +468,9 @@ p {
 
 #info_box nav {
     background-color: #ffffff;
-
+    display: flex;
+    justify-content: center;
+    margin: 0 10px 0 10px;
 }
 
 #info_box nav button {
@@ -486,12 +479,14 @@ p {
     color: #444;
     font-weight: 700;
     text-align: left;
-    width: 100px;
+    flex-wrap: wrap;
+    flex-basis: 100px;
+    margin: 0 20px;
 }
 
 #info {
     background-color: beige;
-
+    margin: 0 10px 0px 10px;
     padding: 15px;
 }
 
