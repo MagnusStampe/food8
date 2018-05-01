@@ -189,7 +189,7 @@ header img {
 
     margin: 15px 20px;
 
-    font-size: 1.5em;
+    font-size: 1em;
 
     font-weight: 700;
 
@@ -203,8 +203,8 @@ header img {
 #burger div:nth-child(1),
 #burger div:nth-child(2),
 #burger div:nth-child(3) {
-    width: 44px;
-    height: 8px;
+    width: 24px;
+    height: 2px;
 
     background-color: #000;
 
@@ -230,7 +230,7 @@ header nav.open #burger p {
 }
 
 header nav.open #burger div:nth-child(1) {
-    transform: rotate(-40deg) scale(0.6) translate(-20px, -0px);
+    transform: rotate(-25deg) scale(0.6) translate(-20px, -0px);
 }
 
 header nav.open #burger div:nth-child(2) {
@@ -239,7 +239,7 @@ header nav.open #burger div:nth-child(2) {
 }
 
 header nav.open #burger div:nth-child(3) {
-    transform: rotate(40deg) scale(0.6) translate(-20px, 0px);
+    transform: rotate(25deg) scale(0.6) translate(-20px, 0px);
 }
 
 #nav_content {
@@ -247,12 +247,13 @@ header nav.open #burger div:nth-child(3) {
 }
 
 #header_bar {
-    background: linear-gradient(#C2CAD0, beige);
+    background-image: url(img/splash.svg);
     width: 100%;
     height: 100px;
     z-index: 110;
     display: flex;
     justify-content: center;
+    background-repeat: no-repeat;
 }
 
 
