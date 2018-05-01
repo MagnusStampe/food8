@@ -120,10 +120,19 @@ async function hentRestaurant() {
                 //Ret logo i header til restaurantens logo
                 document.querySelector("#header_bar img").src = restaurant.acf.logo.url;
                 document.querySelector("#header_bar img").alt = restaurant.acf.restaurantens_navn;
-                //Ret headerens farve til restaurantens farve
-                document.querySelector("#header_bar").style.backgroundColor = restaurant.acf.farve;
-                document.querySelector("header nav").style.backgroundColor = restaurant.acf.farve;
+                //RET FARVER
+
+                //Header
+                document.querySelector("#header_bar").style.background = restaurant.acf.farve;
+                document.querySelector("header nav").style.background = restaurant.acf.farve;
                 document.querySelector("#header_bar img").style.width = "80px";
+
+                //Info box
+                document.querySelector("#info_box nav").style.background = restaurant.acf.farve;
+                document.querySelector("#info_box nav").style.filter = "brightness(1.3) saturate(0.5)";
+                document.querySelector("#info_box #info").style.background = restaurant.acf.farve;
+                document.querySelector("#info_box #info").style.filter = "brightness(1.4) saturate(0.5)";
+
 
                 indsaetMenukort(menukort, menukortNavn);
 
@@ -158,10 +167,10 @@ async function hentRestaurant() {
                             let knapNr = 1;
 
                             while (knapNr < menuNr) {
-                                document.querySelector("[data-nav-" + knapNr + "]").style.color = "#555";
+                                document.querySelector("[data-nav-" + knapNr + "]").style.color = "#333";
                                 knapNr++
                             }
-                            document.querySelector("[data-nav-kontrol]").style.color = "#555";
+                            document.querySelector("[data-nav-kontrol]").style.color = "#333";
                             document.querySelector("[data-nav-om]").style.color = selectedColor;
                             document.querySelector("[data-info]").innerHTML = restaurant.acf.om_restauranten;
                         });
@@ -171,10 +180,10 @@ async function hentRestaurant() {
                             let knapNr = 1;
 
                             while (knapNr < menuNr) {
-                                document.querySelector("[data-nav-" + knapNr + "]").style.color = "#555";
+                                document.querySelector("[data-nav-" + knapNr + "]").style.color = "#333";
                                 knapNr++
                             }
-                            document.querySelector("[data-nav-om]").style.color = "#555";
+                            document.querySelector("[data-nav-om]").style.color = "#333";
                             document.querySelector("[data-nav-kontrol]").style.color = selectedColor;
                             document.querySelector("[data-info]").innerHTML = "<a href='" + restaurant.acf.kontrolrapport + "' target='_blank'>" + restaurant.acf.kontrolrapport + "</a>";
                         });
@@ -215,10 +224,10 @@ async function hentRestaurant() {
 
                             let knapNr = 1;
 
-                            document.querySelector("[data-nav-om]").style.color = "#555";
-                            document.querySelector("[data-nav-kontrol]").style.color = "#555";
+                            document.querySelector("[data-nav-om]").style.color = "#333";
+                            document.querySelector("[data-nav-kontrol]").style.color = "#333";
                             while (knapNr < menuNr) {
-                                document.querySelector("[data-nav-" + knapNr + "]").style.color = "#555";
+                                document.querySelector("[data-nav-" + knapNr + "]").style.color = "#333";
                                 knapNr++
                             }
                             document.querySelector("[data-nav-" + knap + "]").style.color = "#111";
