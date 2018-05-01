@@ -17,11 +17,10 @@
     <input class="seek" type="text" name="søg" value="søg">
 
 
-    <h1 class="h1butikker">Butikker</h1>
-
     <button class="buttonkort">Kort</button>
     <button class="buttonliste">Liste</button>
-    <div id="liste"><button class="vin_knap">Vin</button>
+    <div id="liste">
+        <h1 class="h1butikker">Butikker</h1><button class="vin_knap">Vin</button>
         <button class="slagter_knap">Slagter</button>
 
         <!-- Destination til template - Restauranter det skal hentes ind med json -->
@@ -35,13 +34,15 @@
             <a href="" data-buti-a>
             <div class="over" data-buti-h2>  </div>
             <img src="" alt="" data-buti-img></a>
+            <div class="fade"><img class="rest_logo" src="" alt="" data-buti-logo></div>
         </article>
 
     </template>
     </div>
-    <div id="map">
-
-
+    <div id="kort">
+        <h1>Kort</h1>
+        <div id="map">
+        </div>
     </div>
     <script>
         let map;
@@ -90,11 +91,8 @@
             });
 
         }
-
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArX-jPuUGnALQVkrzWT8bHB8tvfJGly3I&callback=initMap">
-
-
     </script>
 
     <footer></footer>
