@@ -67,6 +67,8 @@ p {
     font-size: 15px;
     font-weight: bold;
     padding: 9px 23px;
+
+    z-index: 10;
 }
 
 .buttonnyheder {
