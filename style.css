@@ -8,12 +8,7 @@ Generel
 
 h1 {
     margin-top: 20px;
-}
-
-.over {
-    font-family: 'Kaushan Script', cursive;
-    margin-top: 30px;
-
+    margin-left: 10px;
 }
 
 
@@ -25,6 +20,11 @@ body {
 
 .h1butikker {
     margin-top: 60px;
+}
+
+.h1nyheder {
+    margin-top: 70px;
+    margin-bottom: 20px;
 }
 
 .body_index {
@@ -47,7 +47,8 @@ p {
 }
 
 #header {
-    margin-top: 50px;
+    margin-top: 80px;
+    margin-bottom: 30px;
 }
 
 .hide {
@@ -76,7 +77,6 @@ p {
 
 
 
-
 /* restaurant billeder */
 
 .rest_container img {
@@ -102,13 +102,14 @@ p {
 
 .buttonkort,
 .buttonliste {
-    margin-top: 12px;
+    margin-top: 90px;
     margin-right: 10px;
     margin-bottom: 20px;
     float: right;
     border: none;
     background-color: beige;
     cursor: pointer;
+    display: inline-block;
 }
 
 
@@ -241,6 +242,10 @@ header nav.open #burger div:nth-child(3) {
     transform: rotate(40deg) scale(0.6) translate(-20px, 0px);
 }
 
+#nav_content {
+    font-size: 0.8em;
+}
+
 #header_bar {
     background: linear-gradient(#C2CAD0, beige);
     width: 100%;
@@ -265,6 +270,13 @@ header nav {
     z-index: 100;
 
     transition: 0.5s;
+}
+
+#info_box nav {
+    display: flex;
+    justify-content: center;
+    padding: 20px 10px 20px 0px;
+    width: 100%;
 }
 
 header nav.open {
@@ -295,18 +307,13 @@ nav a img {
 
 .nyhed_knap,
 .guides_knap {
-    margin: 0.7vw;
-    width: 24vw;
-    box-shadow: inset 0px 34px 0px -15px beige;
+
     background-color: beige;
 
     display: inline-block;
     cursor: pointer;
     color: black;
 
-    font-size: 15px;
-    font-weight: bold;
-    padding: 9px 23px;
 }
 
 
@@ -362,12 +369,13 @@ p {
 
 #map {
     width: 80vw;
-    ;
-    height: 40vh;
+    height: 45vh;
     margin: auto;
-    margin-top: 30px;
 }
 
+#kort {
+    height: 85vh;
+}
 
 .om {
 
@@ -387,10 +395,10 @@ p {
 
 /* Restauranter */
 
-#kort {
-    height: 75vh;
+#kort h1 {
+    text-align: center;
+    margin-top: 50px;
 }
-
 
 #restauranter article {
     position: relative;
@@ -477,7 +485,8 @@ p {
     border: none;
     color: #444;
     font-weight: 700;
-    padding: 5px;
+    text-align: left;
+    width: 100px;
 }
 
 #info {
@@ -512,8 +521,8 @@ main button:hover {
 
 .kasse1 {
     background-color: #C2B9B0;
-    padding: 0px 0px 9px 20px;
-    margin-top: -5px;
+    padding: 10px 0px 10px 20px;
+    margin-top: -20px;
 }
 
 

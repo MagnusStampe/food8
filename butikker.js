@@ -26,8 +26,9 @@ function visz() {
             console.log("vis2()")
 
             let klon = temp.cloneNode(true).content;
-
-            klon.querySelector("[data-buti-h2]").innerHTML = butik.acf.butikkens_navn;
+            klon.querySelector("[data-buti-logo]").src = butik.acf.logo.url;
+            klon.querySelector("[data-buti-logo]").alt = butik.acf.butikkens_navn;
+            console.log(butik.acf.butikkens_navn);
 
             klon.querySelector("[data-buti-a]").href = "butikken.html?id=" + butik.id;
             klon.querySelector("[data-buti-img]").src = butik.acf.start_billedet_.url;
@@ -43,15 +44,19 @@ document.querySelector(".buttonliste").addEventListener("click", visListe);
 
 function visListe() {
     document.querySelector("#liste").classList.remove("hide");
-    document.querySelector("#map").classList.add("hide");
+    document.querySelector("#kort").classList.add("hide");
+    document.querySelector(".buttonliste").style.backgroundColor = "blue";
+    document.querySelector(".buttonkort").style.backgroundColor = "beige";
 }
 
 document.querySelector(".buttonkort").addEventListener("click", visMap);
 
 
 function visMap() {
-    document.querySelector("#map").classList.remove("hide");
+    document.querySelector("#kort").classList.remove("hide");
     document.querySelector("#liste").classList.add("hide");
+    document.querySelector(".buttonliste").style.backgroundColor = "beige";
+    document.querySelector(".buttonkort").style.backgroundColor = "blue";
 }
 
 document.querySelector(".vin_knap").addEventListener("click", () => {
@@ -77,7 +82,8 @@ function vis() {
 
         let klon = temp.cloneNode(true).content;
 
-        klon.querySelector("[data-buti-h2]").innerHTML = butik.acf.butikkens_navn;
+        klon.querySelector("[data-buti-logo]").src = butik.acf.logo.url;
+        klon.querySelector("[data-buti-logo]").alt = butik.acf.butikkens_navn;
 
 
         klon.querySelector("[data-buti-a]").href = "butikken.html?id=" + butik.id;
