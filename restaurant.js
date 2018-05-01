@@ -12,7 +12,8 @@ let selectedColor = "#111";
 let notSelectedColor = "555";
 
 // Initial function
-document.addEventListener("DOMContentLoaded", loaded);
+//Der refereres til loaded() i script til Google Maps
+//document.addEventListener("DOMContentLoaded", loaded);
 
 function loaded() {
     hentRestaurant();
@@ -27,6 +28,7 @@ async function hentRestaurant() {
     document.querySelector("main").innerHTML = restaurantHtml;
 
     hentJson();
+
 
     //###############################
     //JSON - Hent JSON til restaurant
@@ -44,6 +46,7 @@ async function hentRestaurant() {
         document.querySelector(".bookbord").classList.toggle("open_bookbord");
     });
 
+
     //###############################
     //JSON - Indsæt JSONs HTML i HTML
     //###############################
@@ -55,6 +58,44 @@ async function hentRestaurant() {
 
             //Sammenligner restaurantnavn fra databasen med navn fra #header, tjek console.log fra efter "else" hvis der er problemer
             if (restaurantNavn == restaurant.acf.restaurant_navn) {
+
+
+                //----------------Google maps-----------------
+
+                let lat = Number(restaurant.acf.lat);
+                let lng = Number(restaurant.acf.lng);
+                console.log(lat + " , " + lng);
+
+                let map;
+                let centrum = {
+                    lat: lat,
+                    lng: lng
+                };
+
+                googleMaps();
+
+                function googleMaps() {
+                    let icon = {
+                        url: restaurant.acf.logo.url,
+                        scaledSize: new google.maps.Size(40, 40),
+                        origin: new google.maps.Point(0, 0),
+                        anchor: new google.maps.Point(20, 20)
+                    };
+                    map = new google.maps.Map(document.querySelector("#map"), {
+                        center: centrum,
+                        zoom: 12,
+                    });
+                    let marker = new google.maps.Marker({
+                        position: centrum,
+                        title: restaurant.acf.restaurant_navn,
+                        icon: icon,
+                        map: map
+                    });
+                }
+
+
+                //--------------------------------------------
+
                 console.log("Match: " + restaurantNavn + " fundet");
 
                 //Indsæt tekst til "om" i "data-info"
