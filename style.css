@@ -11,6 +11,12 @@ h1 {
     padding-top: 17px;
 }
 
+.over {
+    font-family: 'Kaushan Script', cursive;
+    padding-top: 17px;
+
+}
+
 body {
     padding-top: 80px;
     font-family: 'Muli', sans-serif;
@@ -48,12 +54,18 @@ p {
 
 .vin_knap,
 .slagter_knap {
-    border: none;
-    background-color: aliceblue;
-    float: center;
-    border-radius: 9px;
-    width: 20vw;
-    height: 3vh;
+    margin: 0.7vw;
+    width: 24vw;
+    box-shadow: inset 0px 34px 0px -15px beige;
+    background-color: beige;
+
+    display: inline-block;
+    cursor: pointer;
+    color: black;
+
+    font-size: 15px;
+    font-weight: bold;
+    padding: 9px 23px;
 }
 
 .buttonnyheder {
@@ -101,7 +113,7 @@ Footer
 */
 
 footer {
-    background-color: #C2CAD0;
+    background: linear-gradient(#C2CAD0, beige);
     display: grid;
     margin-top: 5vh;
     padding: 2vw 0 2vw 2vw;
@@ -130,7 +142,9 @@ header {
     left: 0;
     width: 100vw;
     z-index: 100;
+
 }
+
 
 header img {
     width: 170px;
@@ -224,7 +238,7 @@ header nav.open #burger div:nth-child(3) {
 }
 
 #header_bar {
-    background-color: #C2CAD0;
+    background: linear-gradient(#C2CAD0, beige);
     width: 100%;
     height: 100px;
     z-index: 110;
@@ -232,9 +246,11 @@ header nav.open #burger div:nth-child(3) {
     justify-content: center;
 }
 
+
 header nav {
     position: absolute;
-    background-color: #C2CAD0;
+    background: linear-gradient(#C2CAD0, beige);
+    background: linear-gradient(beige, #C2CAD0);
     left: -250px;
     top: 0;
 
@@ -273,17 +289,23 @@ nav a img {
     margin-top: 270px;
 }
 
-.nyhed_knap {
-    background: none;
-    margin-left: 3px;
-    border: solid;
+.nyhed_knap,
+.guides_knap {
+    margin: 0.7vw;
+    width: 24vw;
+    box-shadow: inset 0px 34px 0px -15px beige;
+    background-color: beige;
+
+    display: inline-block;
+    cursor: pointer;
+    color: black;
+
+    font-size: 15px;
+    font-weight: bold;
+    padding: 9px 23px;
 }
 
-.guides_knap {
-    margin-top: 35px;
-    border: solid;
-    background: none;
-}
+
 
 .tilmeld_knap {
     margin-left: 90px;
@@ -295,28 +317,28 @@ nav a img {
     background: none;
 }
 
+
 .overskrift {
     position: relative;
     color: white;
     top: 30px;
     margin-left: 10px;
     font-family: 'Muli', sans-serif;
-    background-color: #b5bbbf;
+    background-color: black;
     margin-right: 15vw;
-
-
+    width: 60vw;
+    opacity: 0.8;
 
 
 }
+
+.overskrift img {}
 
 a {
     text-decoration: none;
 }
 
-.nyhed_knap,
-.guides_knap {
-    background-color: aliceblue;
-}
+
 
 .tilmeld_knap button {
     border-radius: black 20px;
