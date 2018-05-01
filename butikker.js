@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", loaded);
 function loaded() {
     hentJson();
 }
-
+let kate;
 //JSON
 
 async function hentJson() {
@@ -13,23 +13,28 @@ async function hentJson() {
     console.log("Hent JSON")
     vis();
 
-    function vis() {
-        console.log("vis()")
-        let dest = document.querySelector("[data-buti-dest]");
-        let temp = document.querySelector("[data-buti-temp]");
 
-        butikker.forEach(butik => {
+}
 
-            let klon = temp.cloneNode(true).content;
+function visz() {
+    console.log("vis()")
+    let dest = document.querySelector("[data-buti-dest]");
+    let temp = document.querySelector("[data-buti-temp]");
+    document.querySelector("[data-buti-dest]").innerHTML = "";
+    butikker.forEach(butik => {
+            if (butik.acf.vin == kate) {
+                console.log("vis2()")
 
-            klon.querySelector("[data-buti-h2]").innerHTML = butik.acf.butikkens_navn;
+                let klon = temp.cloneNode(true).content;
+
+                klon.querySelector("[data-buti-h2]").innerHTML = butik.acf.butikkens_navn;
 
 
-            klon.querySelector("[data-buti-a]").href = "butikken.html?id=" + butik.id;
-            klon.querySelector("[data-buti-img]").src = butik.acf.start_billedet_.url;
-            klon.querySelector("[data-buti-img]").alt = butik.acf.start_billedet_.url;
-            dest.appendChild(klon);
-        });
+                klon.querySelector("[data-buti-a]").href = "butikken.html?id=" + butik.id;
+                klon.querySelector("[data-buti-img]").src = butik.acf.start_billedet_.url;
+                klon.querySelector("[data-buti-img]").alt = butik.acf.start_billedet_.url;
+                dest.appendChild(klon);
+            });
     }
 
     visListe();
@@ -49,3 +54,40 @@ async function hentJson() {
         document.querySelector("#liste").classList.add("hide");
     }
 }
+
+});
+
+document.querySelector(".vin_knap").addEventListener("click", () => {
+    kate = "vin";
+    visz();
+    console.log("klik11");
+});
+
+
+document.querySelector(".slagter_knap").addEventListener("click", () => {
+    kate = "kød";
+    visz();
+    console.log("klik");
+});
+
+function vis() {
+    console.log("vis()")
+    let dest = document.querySelector("[data-buti-dest]");
+    let temp = document.querySelector("[data-buti-temp]");
+    document.querySelector("[data-buti-dest]").innerHTML = "";
+    butikker.forEach(butik => {
+
+
+        let klon = temp.cloneNode(true).content;
+
+        klon.querySelector("[data-buti-h2]").innerHTML = butik.acf.butikkens_navn;
+
+
+        klon.querySelector("[data-buti-a]").href = "butikken.html?id=" + butik.id;
+        klon.querySelector("[data-buti-img]").src = butik.acf.start_billedet_.url;
+        klon.querySelector("[data-buti-img]").alt = butik.acf.start_billedet_.url;
+        dest.appendChild(klon);
+
+
+    });
+};
