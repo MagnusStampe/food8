@@ -9,6 +9,7 @@ Generel
 h1 {
     margin-top: 20px;
     margin-left: 10px;
+    text-align: center;
 }
 
 
@@ -872,4 +873,9 @@ input[type=submit]:hover {
 address,
 .grey {
     color: #403535;
+}
+
+.singlemap #map {
+    height: 23vh;
+    margin-top: 20px;
 }
