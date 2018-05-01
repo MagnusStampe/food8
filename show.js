@@ -24,6 +24,7 @@ function vis() {
         let klon = temp.cloneNode(true).content;
 
         //        //data i <div>
+        klon.querySelector("[data-ny-a]").href = "butikken.html?id=" + billeder.id;
         klon.querySelector("[data-buti-img]").src = billeder.acf.billede1.url;
         klon.querySelector("[data-buti-img]").alt = billeder.acf.billede1.url;
         dest.appendChild(klon);
@@ -35,6 +36,7 @@ function vis() {
         let klon = temp.cloneNode(true).content;
 
         //        //data i <div>
+        klon.querySelector("[data-ny-a]").href = billeder.acf.Link + ".html";
         klon.querySelector("[data-buti-img]").src = billeder.acf.baggrundsbillede.url;
         klon.querySelector("[data-buti-img]").alt = billeder.acf.baggrundsbillede.url;
         dest.appendChild(klon);
