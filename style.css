@@ -878,3 +878,8 @@ address,
 .grey {
     color: #403535;
 }
+
+.singlemap #map {
+    height: 23vh;
+    margin-top: 20px;
+}
