@@ -30,6 +30,17 @@ function vis() {
             document.querySelector("[data-p]").textContent = nyhed.title.rendered;
 
 
+
+            //Indsæt tekst til "om" i "data-info"
+            document.querySelector("[data-adresse]").innerHTML = nyhed.acf.adresse;
+            //Indsæt restaurantens adresse
+            document.querySelector("[data-email]").innerHTML = nyhed.acf.email;
+            //Indsæt telefonnummer hvis der er et
+            if (nyhed.acf.telefon != "") {
+                document.querySelector("[data-telefon]").innerHTML = "Tlf: +45 " + nyhed.acf.telefon;
+            }
+            //Indsæt åbningstider
+            document.querySelector("[data-abningstider]").innerHTML = nyhed.acf.abningstider;
         }
 
     })

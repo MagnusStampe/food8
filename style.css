@@ -11,6 +11,12 @@ h1 {
     padding-top: 17px;
 }
 
+.over {
+    font-family: 'Kaushan Script', cursive;
+    padding-top: 17px;
+
+}
+
 body {
     padding-top: 80px;
     font-family: 'Muli', sans-serif;
@@ -18,7 +24,7 @@ body {
 
 
 .body_index {
-    padding-top: 100px;
+    padding-top: 80px;
 }
 
 img {
@@ -49,11 +55,20 @@ p {
 .vin_knap,
 .slagter_knap {
     border: none;
-    background-color: aliceblue;
-    float: center;
-    border-radius: 9px;
-    width: 20vw;
-    height: 3vh;
+    margin: 0.7vw;
+    width: 24vw;
+    box-shadow: inset 0px 34px 0px -15px beige;
+    background-color: beige;
+
+    display: inline-block;
+    cursor: pointer;
+    color: black;
+
+    font-size: 15px;
+    font-weight: bold;
+    padding: 9px 23px;
+
+    z-index: 10;
 }
 
 .buttonnyheder {
@@ -88,7 +103,7 @@ p {
 
 .buttonkort,
 .buttonliste {
-    margin-top: 30px;
+    margin-top: 55px;
     margin-right: 10px;
     float: right;
     border: none;
@@ -96,12 +111,13 @@ p {
     cursor: pointer;
 }
 
+
 /*
 Footer
 */
 
 footer {
-    background-color: #C2CAD0;
+    background: linear-gradient(#C2CAD0, beige);
     display: grid;
     margin-top: 5vh;
     padding: 2vw 0 2vw 2vw;
@@ -130,7 +146,9 @@ header {
     left: 0;
     width: 100vw;
     z-index: 100;
+
 }
+
 
 header img {
     width: 170px;
@@ -224,7 +242,7 @@ header nav.open #burger div:nth-child(3) {
 }
 
 #header_bar {
-    background-color: #C2CAD0;
+    background: linear-gradient(#C2CAD0, beige);
     width: 100%;
     height: 100px;
     z-index: 110;
@@ -232,9 +250,11 @@ header nav.open #burger div:nth-child(3) {
     justify-content: center;
 }
 
+
 header nav {
     position: absolute;
-    background-color: #C2CAD0;
+    background: linear-gradient(#C2CAD0, beige);
+    background: linear-gradient(beige, #C2CAD0);
     left: -250px;
     top: 0;
 
@@ -273,17 +293,23 @@ nav a img {
     margin-top: 270px;
 }
 
-.nyhed_knap {
-    background: none;
-    margin-left: 3px;
-    border: solid;
+.nyhed_knap,
+.guides_knap {
+    margin: 0.7vw;
+    width: 24vw;
+    box-shadow: inset 0px 34px 0px -15px beige;
+    background-color: beige;
+
+    display: inline-block;
+    cursor: pointer;
+    color: black;
+
+    font-size: 15px;
+    font-weight: bold;
+    padding: 9px 23px;
 }
 
-.guides_knap {
-    margin-top: 35px;
-    border: solid;
-    background: none;
-}
+
 
 .tilmeld_knap {
     margin-left: 90px;
@@ -295,28 +321,28 @@ nav a img {
     background: none;
 }
 
+
 .overskrift {
     position: relative;
     color: white;
     top: 30px;
     margin-left: 10px;
     font-family: 'Muli', sans-serif;
-    background-color: #b5bbbf;
+    background-color: black;
     margin-right: 15vw;
-
-
+    width: 60vw;
+    opacity: 0.8;
 
 
 }
+
+.overskrift img {}
 
 a {
     text-decoration: none;
 }
 
-.nyhed_knap,
-.guides_knap {
-    background-color: aliceblue;
-}
+
 
 .tilmeld_knap button {
     border-radius: black 20px;
@@ -335,12 +361,12 @@ p {
 }
 
 #map {
-    width: 100;
+    width: 1000;
     height: 50vw;
-    background: burlywood;
-    align-self: center;
+}
 
-    padding: 20px;
+iframe {
+    margin-top: 20px;
 }
 
 .om {
@@ -362,7 +388,12 @@ p {
 /* Restauranter */
 
 #map {
-    margin: 60px;
+    margin: 10px;
+    height: 70vw;
+}
+
+#kort {
+    height: 75vh;
 }
 
 
@@ -374,7 +405,6 @@ p {
     position: absolute;
     bottom: 40px;
     left: 140px;
-    color: #eee;
     z-index: 1;
     display: none;
 }
@@ -391,7 +421,6 @@ p {
     left: 20px;
 }
 
-#restauranter article a {}
 
 #restauranter article .fade {
     position: absolute;
@@ -402,12 +431,44 @@ p {
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
 }
 
+#restauranter {
+    margin-top: 20px;
+}
+
+#liste h1 {
+    margin-top: 50px;
+}
+
+0
 /* Restaurant */
 
 #info_box {
     margin: 10px;
     padding: 10px;
     background-color: #99e0db;
+
+}
+
+#info p {
+    line-height: 1.5em;
+    margin-top: 1em;
+}
+
+
+#info h3 {
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+}
+
+#info h4 {
+    margin-top: 2em;
+    margin
+}
+
+#info h2 {
+    font-size: 1em;
+    margin-top: 1em;
+    line-height: 1.3em;
 
 }
 
@@ -428,7 +489,6 @@ p {
     background-color: beige;
 
     padding: 15px;
-    min-height: 500px;
 }
 
 
@@ -526,7 +586,7 @@ input[type=submit]:hover {
     position: absolute;
     bottom: 30px;
     left: 35%;
-    width: 30%;
+    width: 35%;
     text-align: center;
     font-size: 1em;
     padding: 5px;
@@ -612,13 +672,14 @@ input[type=submit]:hover {
 
 .tilbage {
     position: absolute;
-    top: 120px
+    top: 120px;
 }
 
 
-form input {
-    float: right;
-    margin-top: 15px
+.seek {
+    position: absolute;
+    top: 105px;
+    right: 7px;
 }
 
 /* book bord */
@@ -781,4 +842,31 @@ input[type=submit]:hover {
 
 .popup1 p {
     font-size: 0.7em;
+}
+
+
+
+/* Nyhed */
+
+.nyhed p {
+    margin: 10px 0;
+    line-height: 1.5em;
+}
+
+
+.ikon {
+    width: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    grid-gap: 12px;
+    margin: 30px 10px 0px 10px;
+    font-size: 0.9em;
+
+}
+
+address {
+    color: #403535;
 }
