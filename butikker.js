@@ -22,40 +22,38 @@ function visz() {
     let temp = document.querySelector("[data-buti-temp]");
     document.querySelector("[data-buti-dest]").innerHTML = "";
     butikker.forEach(butik => {
-            if (butik.acf.vin == kate) {
-                console.log("vis2()")
+        if (butik.acf.vin == kate) {
+            console.log("vis2()")
 
-                let klon = temp.cloneNode(true).content;
+            let klon = temp.cloneNode(true).content;
 
-                klon.querySelector("[data-buti-h2]").innerHTML = butik.acf.butikkens_navn;
-
-
-                klon.querySelector("[data-buti-a]").href = "butikken.html?id=" + butik.id;
-                klon.querySelector("[data-buti-img]").src = butik.acf.start_billedet_.url;
-                klon.querySelector("[data-buti-img]").alt = butik.acf.start_billedet_.url;
-                dest.appendChild(klon);
-            });
-    }
-
-    visListe();
-    document.querySelector(".buttonliste").addEventListener("click", visListe);
+            klon.querySelector("[data-buti-h2]").innerHTML = butik.acf.butikkens_navn;
 
 
-    function visListe() {
-        document.querySelector("#liste").classList.remove("hide");
-        document.querySelector("#map").classList.add("hide");
-    }
-
-    document.querySelector(".buttonkort").addEventListener("click", visMap);
-
-
-    function visMap() {
-        document.querySelector("#map").classList.remove("hide");
-        document.querySelector("#liste").classList.add("hide");
-    }
+            klon.querySelector("[data-buti-a]").href = "butikken.html?id=" + butik.id;
+            klon.querySelector("[data-buti-img]").src = butik.acf.start_billedet_.url;
+            klon.querySelector("[data-buti-img]").alt = butik.acf.start_billedet_.url;
+            dest.appendChild(klon);
+        }
+    });
 }
 
-});
+visListe();
+document.querySelector(".buttonliste").addEventListener("click", visListe);
+
+
+function visListe() {
+    document.querySelector("#liste").classList.remove("hide");
+    document.querySelector("#map").classList.add("hide");
+}
+
+document.querySelector(".buttonkort").addEventListener("click", visMap);
+
+
+function visMap() {
+    document.querySelector("#map").classList.remove("hide");
+    document.querySelector("#liste").classList.add("hide");
+}
 
 document.querySelector(".vin_knap").addEventListener("click", () => {
     kate = "vin";
