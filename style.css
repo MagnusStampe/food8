@@ -403,7 +403,6 @@ iframe {
     position: absolute;
     bottom: 40px;
     left: 140px;
-    color: #eee;
     z-index: 1;
     display: none;
 }
@@ -420,7 +419,6 @@ iframe {
     left: 20px;
 }
 
-#restauranter article a {}
 
 #restauranter article .fade {
     position: absolute;
@@ -435,12 +433,40 @@ iframe {
     margin-top: 20px;
 }
 
+#liste h1 {
+    margin-top: 50px;
+}
+
+0
 /* Restaurant */
 
 #info_box {
     margin: 10px;
     padding: 10px;
     background-color: #99e0db;
+
+}
+
+#info p {
+    line-height: 1.5em;
+    margin-top: 1em;
+}
+
+
+#info h3 {
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+}
+
+#info h4 {
+    margin-top: 2em;
+    margin
+}
+
+#info h2 {
+    font-size: 1em;
+    margin-top: 1em;
+    line-height: 1.3em;
 
 }
 
@@ -461,7 +487,6 @@ iframe {
     background-color: beige;
 
     padding: 15px;
-    min-height: 500px;
 }
 
 
@@ -824,4 +849,22 @@ input[type=submit]:hover {
 .nyhed p {
     margin: 10px 0;
     line-height: 1.5em;
+}
+
+
+.ikon {
+    width: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    grid-gap: 12px;
+    margin: 30px 10px 0px 10px;
+    font-size: 0.9em;
+
+}
+
+address {
+    color: #403535;
 }
