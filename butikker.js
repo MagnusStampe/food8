@@ -29,7 +29,6 @@ function visz() {
 
             klon.querySelector("[data-buti-h2]").innerHTML = butik.acf.butikkens_navn;
 
-
             klon.querySelector("[data-buti-a]").href = "butikken.html?id=" + butik.id;
             klon.querySelector("[data-buti-img]").src = butik.acf.start_billedet_.url;
             klon.querySelector("[data-buti-img]").alt = butik.acf.start_billedet_.url;

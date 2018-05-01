@@ -7,21 +7,25 @@ Generel
 }
 
 h1 {
-    font-family: 'Kaushan Script', cursive;
-    padding-top: 17px;
+    margin-top: 20px;
 }
 
 .over {
     font-family: 'Kaushan Script', cursive;
-    padding-top: 17px;
+    margin-top: 30px;
 
 }
+
 
 body {
     padding-top: 80px;
     font-family: 'Muli', sans-serif;
 }
 
+
+.h1butikker {
+    margin-top: 60px;
+}
 
 .body_index {
     padding-top: 80px;
@@ -55,19 +59,14 @@ p {
 .vin_knap,
 .slagter_knap {
     border: none;
-    margin: 0.7vw;
-    width: 24vw;
+    margin-left: 10px;
+    margin-top: 12px;
+    width: 15vw;
     box-shadow: inset 0px 34px 0px -15px beige;
     background-color: beige;
-
     display: inline-block;
     cursor: pointer;
     color: black;
-
-    font-size: 15px;
-    font-weight: bold;
-    padding: 9px 23px;
-
     z-index: 10;
 }
 
@@ -103,8 +102,9 @@ p {
 
 .buttonkort,
 .buttonliste {
-    margin-top: 55px;
+    margin-top: 12px;
     margin-right: 10px;
+    margin-bottom: 20px;
     float: right;
     border: none;
     background-color: beige;
@@ -361,13 +361,13 @@ p {
 }
 
 #map {
-    width: 1000;
-    height: 50vw;
+    width: 80vw;
+    ;
+    height: 40vh;
+    margin: auto;
+    margin-top: 30px;
 }
 
-iframe {
-    margin-top: 20px;
-}
 
 .om {
 
@@ -387,11 +387,6 @@ iframe {
 
 /* Restauranter */
 
-#map {
-    margin: 10px;
-    height: 70vw;
-}
-
 #kort {
     height: 75vh;
 }
@@ -405,7 +400,6 @@ iframe {
     position: absolute;
     bottom: 40px;
     left: 140px;
-    color: #eee;
     z-index: 1;
     display: none;
 }
@@ -422,7 +416,6 @@ iframe {
     left: 20px;
 }
 
-#restauranter article a {}
 
 #restauranter article .fade {
     position: absolute;
@@ -437,12 +430,40 @@ iframe {
     margin-top: 20px;
 }
 
+#liste h1 {
+    margin-top: 50px;
+}
+
+0
 /* Restaurant */
 
 #info_box {
     margin: 10px;
     padding: 10px;
     background-color: #99e0db;
+
+}
+
+#info p {
+    line-height: 1.5em;
+    margin-top: 1em;
+}
+
+
+#info h3 {
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+}
+
+#info h4 {
+    margin-top: 2em;
+    font-size: 1.2em;
+}
+
+#info h2 {
+    font-size: 1em;
+    margin-top: 1em;
+    line-height: 1.3em;
 
 }
 
@@ -463,7 +484,6 @@ iframe {
     background-color: beige;
 
     padding: 15px;
-    min-height: 500px;
 }
 
 
@@ -487,7 +507,7 @@ main button:hover {
 
 .kasse {
     background-color: #C2B9B0;
-    padding: 10px 0px 10px 20px;
+    padding: 1px 0px 10px 20px;
 }
 
 .kasse1 {
@@ -655,6 +675,9 @@ input[type=submit]:hover {
     position: absolute;
     top: 105px;
     right: 7px;
+    width: 100px;
+    height: 12px;
+    font-size: 0.7em;
 }
 
 /* book bord */
@@ -826,4 +849,23 @@ input[type=submit]:hover {
 .nyhed p {
     margin: 10px 0;
     line-height: 1.5em;
+}
+
+
+.ikon {
+    width: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    grid-gap: 12px;
+    margin: 30px 10px 0px 10px;
+    font-size: 0.9em;
+
+}
+
+address,
+.grey {
+    color: #403535;
 }
