@@ -40,7 +40,7 @@ function vis() {
                 document.querySelector("[data-telefon]").innerHTML = "Tlf: +45 " + nyhed.acf.telefon;
             }
             //Indsæt åbningstider
-            document.querySelector("[data-abningstider]").innerHTML = nyhed.acf.abningstider;
+            document.querySelector("[data-abningstider]").innerHTML = nyhed.acf.open;
         }
 
     })
