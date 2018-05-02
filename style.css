@@ -452,6 +452,9 @@ p {
 
 #restauranter {
     margin-top: 20px;
+    width: 100vw;
+    height: 25vw;
+    overflow: hidden;
 }
 
 #liste h1 {
@@ -513,7 +516,7 @@ p {
 
 main button {
     border: none;
-    <<<<<<< HEAD background: #4c5866;
+    background: #4c5866;
     color: white;
     border-radius: 9px;
     width: 80vw;
@@ -539,7 +542,7 @@ main button {
     border-radius: 9px;
     height: 4vh;
     font-size: 1em;
-    font-family: font-family: 'Muli', sans-serif;
+    font-family: 'Muli', sans-serif;
     margin: 0 auto;
     margin-bottom: 30px;
 
@@ -1179,4 +1182,10 @@ input[type=submit]:hover {
     width: 200px;
     margin: 0 auto;
     display: block;
+}
+
+.kasse {
+    width: 20vw;
+    height: 20vw;
+    overflow: hidden;
 }
