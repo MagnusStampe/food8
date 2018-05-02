@@ -66,7 +66,7 @@ p {
 .slagter_knap {
     border: none;
     margin-left: 10px;
-    margin-top: 12px;
+    margin-top: px;
     width: 15vw;
 
 
@@ -74,12 +74,13 @@ p {
     cursor: pointer;
     color: white;
     z-index: 10;
-    background-color: #AFD995;
+    background-color: #4c5866;
     border-radius: 20px/50px;
     text-decoration: none;
     cursor: pointer;
     transition: all 0.3s ease-out;
     font-size: 0.8em;
+    font-weight: 600;
 }
 
 .buttonnyheder {
@@ -113,7 +114,7 @@ p {
 
 .buttonkort,
 .buttonliste {
-    margin-top: 90px;
+    margin-top: 92px;
     margin-right: 10px;
     margin-bottom: 20px;
     float: right;
