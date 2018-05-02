@@ -129,9 +129,9 @@ async function hentRestaurant() {
 
                 //Info box
                 document.querySelector("#info_box nav").style.background = restaurant.acf.farve;
-                document.querySelector("#info_box nav").style.filter = "brightness(1.3) saturate(0.5)";
+                document.querySelector("#info_box nav").style.filter = "brightness(0.8) saturate(1.2)";
                 document.querySelector("#info_box #info").style.background = restaurant.acf.farve;
-                document.querySelector("#info_box #info").style.filter = "brightness(1.4) saturate(0.5)";
+                document.querySelector("#info_box #info").style.filter = "brightness(1.3) saturate(0.8)";
 
 
                 indsaetMenukort(menukort, menukortNavn);
