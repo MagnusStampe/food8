@@ -9,7 +9,7 @@ async function start() {
     MinSlider = await jsondata.json();
     console.log(MinSlider[0].acf.start_billedet_.url);
     vis();
-    showDivs(1);
+    showDivs();
 
 
 }
@@ -78,28 +78,46 @@ function vis() {
 //
 //}
 
+var myIndex = 0;
+showDivs();
 
-
-
-//start på slideren
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-    showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
+function showDivs() {
     var i;
     var x = document.getElementsByClassName("mySlides");
-    if (n > x.length) {
-        slideIndex = 1
-    }
-    if (n < 1) {
-        slideIndex = x.length
-    }
     for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";
     }
-    x[slideIndex - 1].style.display = "block";
+    myIndex++;
+    if (myIndex > x.length) {
+        myIndex = 1
+    }
+    x[myIndex - 1].style.display = "block";
+    setTimeout(showDivs, 2000); // Change image every 2 seconds
 }
+
+
+////start på slideren
+//var slideIndex = 1;
+//showDivs(slideIndex);
+//
+//function plusDivs(n) {
+//    showDivs(slideIndex += n);
+//}
+//
+//function showDivs(n) {
+//    var i;
+//    var x = document.getElementsByClassName("mySlides");
+//    if (n > x.length) {
+//        slideIndex = 1
+//    }
+//    if (n < 1) {
+//        slideIndex = x.length
+//    }
+//    for (i = 0; i < x.length; i++) {
+//        x[i].style.display = "none";
+//    }
+//    x[slideIndex - 1].style.display = "block";
+//}
+//
+//
+//galari = document.getElementById("header").;
