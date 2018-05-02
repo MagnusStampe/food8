@@ -11,6 +11,7 @@ h1 {
     text-align: center;
     margin: 0 auto;
     display: block;
+    font-family: 'Muli', sans-serif;
 }
 
 
@@ -22,11 +23,13 @@ body {
 
 .h1butikker {
     margin-top: 60px;
+    font-family: 'Muli', sans-serif;
 }
 
 .h1nyheder {
     margin-top: 70px;
     margin-bottom: 20px;
+    font-family: 'Muli', sans-serif;
 }
 
 .body_index {
@@ -269,7 +272,6 @@ header nav.open #burger div:nth-child(3) {
     display: flex;
     justify-content: center;
     background-repeat: repeat-x;
-
 }
 
 
@@ -462,6 +464,7 @@ p {
 
 #info_box {
     margin: 10px;
+    font-family: 'Muli', sans-serif;
 }
 
 #info p {
@@ -511,7 +514,7 @@ p {
 
 main button {
     border: none;
-    background: #4c5866;
+    <<<<<<< HEAD background: #4c5866;
     color: white;
     border-radius: 9px;
     width: 80vw;
@@ -530,12 +533,15 @@ main button {
     background: #4c5866;
     color: white;
     font-weight: 600;
-    border-radius: 9px;
     width: 90vw;
-    height: 3vh;
     cursor: pointer;
     margin: 0 auto;
     display: block;
+    border-radius: 9px;
+    height: 4vh;
+    font-size: 1em;
+    font-family: font-family: 'Muli', sans-serif;
+    margin: 0 auto;
     margin-bottom: 30px;
 
 }
@@ -1073,4 +1079,105 @@ input[type=submit]:hover {
 
 .nyhedguideimg {
     margin-top: 20px;
+}
+
+/* Er dit bord booket */
+
+#tekst {
+    font-size: 0.9em;
+    margin-left: 10vw;
+}
+
+.col3 a {
+    font-size: 0.7em;
+}
+
+.col3 {
+    width: 70%;
+    max-width: 300px;
+    margin: auto;
+    padding: 3vw 4vw 3vw 3vw;
+    background-color: beige;
+}
+
+
+
+/ @media screen and (max-width: 650px) {
+    .col3 {
+        width: 100%;
+        margin-top: 0;
+    }
+
+}
+
+.overlay3 {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 200;
+}
+
+.overlay3:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup3 {
+    margin: 150px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 5px;
+    width: 42%;
+    position: relative;
+    transition: all 5s ease-in-out;
+    background-color: beige;
+}
+
+
+.popup3 .close3 {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup3 .close3:hover {
+    color: grey;
+}
+
+.popup3 .content3 {
+    max-height: 30%;
+    padding-top: 2vw;
+    font-size: 0.8em;
+}
+
+.popup3 h2 {
+    font-size: 1em;
+    margin: 10px 0px 10px 0px;
+}
+
+@media screen and (max-width: 700px) {
+    .popup3 {
+        width: 70%;
+    }
+}
+
+.popup3 p {
+    font-size: 0.9em;
+}
+
+.bookbord img {
+    width: 200px;
+    margin: 0 auto;
+    display: block;
 }
