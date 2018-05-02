@@ -78,6 +78,8 @@
         }
 
 
+
+
         function initMap() {
             let map = new google.maps.Map(document.querySelector("#map"), {
                 center: unmercato,
@@ -90,6 +92,8 @@
 
                 map: map
             });
+
+
 
             let marker1 = new google.maps.Marker({
                 position: noho,
@@ -120,17 +124,77 @@
                 title: "Fleisch",
                 map: map
             });
-            let infowindow = new google.maps.InfoWindow({});
+
+            let infowindow = new google.maps.InfoWindow({
+                content: "<h2>The Fat Pike</h2> <p>Njalsgade 19D 2300 København H </p>"
+            });
             marker.addListener("click", () => {
                 infowindow.open(map, marker);
             });
 
-        }
+            marker.addListener('click', function() {
+                infowindow.open(map, marker);
+            })
 
+            let infowindow1 = new google.maps.InfoWindow({
+                content: "<h2>NOHO</h2> <p>Flæsketorvet 28 1711 København V</p>"
+            });
+            marker1.addListener("click", () => {
+                infowindow1.open(map, marker1);
+            });
+
+            marker1.addListener('click', function() {
+                infowindow1.open(map, marker1);
+            })
+
+            let infowindow2 = new google.maps.InfoWindow({
+                content: "<h2>Metier</h2> <p>Blegdamsvej 70 2100 København Ø</p>"
+            });
+            marker2.addListener("click", () => {
+                infowindow2.open(map, marker2);
+            });
+
+            marker2.addListener('click', function() {
+                infowindow2.open(map, marker2);
+            })
+
+            let infowindow3 = new google.maps.InfoWindow({
+                content: "<h2>Spisehuset</h2> <p>Blegdamsvej 70 2100 København Ø</p>"
+            });
+            marker3.addListener("click", () => {
+                infowindow3.open(map, marker3);
+            });
+
+            marker3.addListener('click', function() {
+                infowindow3.open(map, marker3);
+            })
+
+            let infowindow4 = new google.maps.InfoWindow({
+                content: "<h2>Un Mercato</h2> <p>Torvehallerne <br>Frederiksborggade 19 1360 København K </p>"
+            });
+            marker4.addListener("click", () => {
+                infowindow4.open(map, marker4);
+            });
+
+            marker4.addListener('click', function() {
+                infowindow4.open(map, marker4);
+            })
+
+            let infowindow5 = new google.maps.InfoWindow({
+                content: "<h2>Fleisch</h2> <p>Slagterboderne 7 1716 København </p>"
+            });
+            marker5.addListener("click", () => {
+                infowindow5.open(map, marker5);
+            });
+
+            marker5.addListener('click', function() {
+                infowindow5.open(map, marker5);
+            })
+
+
+        }
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArX-jPuUGnALQVkrzWT8bHB8tvfJGly3I&callback=initMap">
-
-
     </script>
     <footer></footer>
 
