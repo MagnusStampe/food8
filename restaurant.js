@@ -61,51 +61,48 @@ async function hentRestaurant() {
                 //###############################
                 //--------------slider--------------
                 //###############################
-                /*
-                                slide();
-                                var myIndex = 0;
-                                showDivs();
+                let imgNummer = 1;
+                let imgLink = "billede" + imgNummer;
+                slide(imgLink);
+                var myIndex = 0;
+                showDivs();
 
-                                function showDivs() {
-                                    var i;
-                                    var x = document.getElementsByClassName("mySlides");
-                                    for (i = 0; i < x.length; i++) {
-                                        x[i].style.display = "none";
-                                    }
-                                    myIndex++;
-                                    if (myIndex > x.length) {
-                                        myIndex = 1
-                                    }
-                                    x[myIndex - 1].style.display = "block";
-                                    setTimeout(showDivs, 2000); // Change image every 2 seconds
-                                }
+                function showDivs() {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    myIndex++;
+                    if (myIndex > x.length) {
+                        myIndex = 1
+                    }
+                    x[myIndex - 1].style.display = "block";
+                    setTimeout(showDivs, 2000); // Change image every 2 seconds
+                }
 
-                                function slide() {
-
-
-
-                                    let dest = document.querySelector("[data-buti-dest]");
-                                    let temp = document.querySelector("[data-template]");
-
-                                    let klon = temp.cloneNode(true).content;
-                                    let imgNummer = 1;
-                                    let imgLink = "billede " + imgNummer;
-                                    console.log(restaurant.acf[imgLink].url);
-                                    if (imgLink != "") {
-                                        //        //data i <div>
-
-                                        klon.querySelector("[data-buti-img]").src = restaurant.acf[imgLink].url;
-                                        klon.querySelector("[data-buti-img]").alt = restaurant.acf[imgLink].url;
-                                        dest.appendChild(klon);
-                                        imgNummer++;
-                                        slide();
-                                    }
-                                    //
-                                }
-
-                                */
+                function slide(imgLinkVar) {
 
 
+
+                    let dest = document.querySelector("[data-buti-dest]");
+                    let temp = document.querySelector("[data-template]");
+
+                    let klon = temp.cloneNode(true).content;
+                    console.log(restaurant.acf[imgLinkVar].url);
+                    if (restaurant.acf[imgLinkVar]) {
+                        //        //data i <div>
+
+                        klon.querySelector("[data-buti-img]").src = restaurant.acf[imgLinkVar].url;
+                        klon.querySelector("[data-buti-img]").alt = restaurant.acf[imgLinkVar].url;
+                        dest.appendChild(klon);
+                        imgNummer++;
+                        let imgLink = "billede" + imgNummer;
+
+                        slide(imgLink);
+                    }
+                    //
+                }
 
 
                 //----------------Google maps-----------------
@@ -295,5 +292,5 @@ async function hentRestaurant() {
             }
         });
     }
-
 }
+console.log("Var: " + rest);
