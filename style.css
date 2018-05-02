@@ -178,6 +178,7 @@ header img {
     position: absolute;
     bottom: 130px;
     left: 20px;
+    pointer-events: none;
 }
 
 .logo img {
@@ -443,8 +444,9 @@ p {
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
 }
 
-#restauranter {
+#restaurant_slide {
     margin-top: 20px;
+    margin-bottom: 20px;
     width: 100vw;
     height: 25vw;
     overflow: hidden;
