@@ -264,7 +264,7 @@ header nav.open #burger div:nth-child(3) {
     z-index: 110;
     display: flex;
     justify-content: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
 }
 
 
