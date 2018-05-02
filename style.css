@@ -266,12 +266,12 @@ header nav.open #burger div:nth-child(3) {
 
 #header_bar {
     background-image: url(img/splash.svg);
-    width: 110%;
+    width: 100%;
     height: 100px;
     z-index: 110;
     display: flex;
     justify-content: center;
-    background-repeat: repeat-x;
+    background-size: cover;
 }
 
 
@@ -346,24 +346,17 @@ nav a img {
 
 
 .overskrift {
-    position: relative;
+    position: absolute;
     color: white;
-    top: 30px;
-    margin-left: 10px;
     font-family: 'Muli', sans-serif;
-    background-color: black;
-    margin-right: 15vw;
-    width: 60vw;
-    opacity: 0.8;
-
-
+    font-weight: 900;
+    font-size: 1em;
+    top: 10%;
+    z-index: 100;
+    background-color: rgba(154, 216, 203, 0.9);
+    padding: 10px;
 }
 
-.overskrift img {}
-
-a {
-    text-decoration: none;
-}
 
 
 
@@ -514,7 +507,7 @@ p {
 
 main button {
     border: none;
-    <<<<<<< HEAD background: #4c5866;
+    background: #4c5866;
     color: white;
     border-radius: 9px;
     width: 80vw;
@@ -552,7 +545,7 @@ main button:hover {
 
 .kasse {
     background-color: #9ad8cb;
-    padding: 1px 0px 10px 20px;
+    padding: 10px 0px 10px 20px;
 }
 
 .kasse1 {
@@ -718,6 +711,7 @@ input[type=submit]:hover {
 .tilbage {
     position: absolute;
     top: 120px;
+    text-decoration: none;
 }
 
 
