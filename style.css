@@ -66,7 +66,8 @@ p {
 .slagter_knap {
     border: none;
     margin-left: 10px;
-    margin-top: px;
+    margin-top: 0px;
+    margin-bottom: 10px;
     width: 15vw;
 
 
@@ -114,7 +115,7 @@ p {
 
 .buttonkort,
 .buttonliste {
-    margin-top: 92px;
+    margin-top: 63px;
     margin-right: 10px;
     margin-bottom: 20px;
     float: right;
@@ -172,14 +173,13 @@ header {
 
 header img {
     width: 170px;
-    padding-top: 10px;
 }
 
 .logo {
     position: absolute;
-    bottom: 130px;
+    bottom: 100px;
     left: 20px;
-    pointer-events: none;
+    height: 350px;
 }
 
 .logo img {
@@ -449,7 +449,7 @@ p {
     margin-top: 20px;
     margin-bottom: 20px;
     width: 100vw;
-    height: 25vw;
+    height: 50vw;
     overflow: hidden;
 }
 
@@ -1179,10 +1179,4 @@ input[type=submit]:hover {
     width: 200px;
     margin: 0 auto;
     display: block;
-}
-
-.kasse {
-    width: 20vw;
-    height: 20vw;
-    overflow: hidden;
 }
