@@ -42,8 +42,8 @@ async function hentJson() {
         function visListe() {
             document.querySelector("#liste").classList.remove("hide");
             document.querySelector("#kort").classList.add("hide");
-            document.querySelector(".buttonliste").style.backgroundColor = "blue";
-            document.querySelector(".buttonkort").style.backgroundColor = "beige";
+            document.querySelector(".buttonliste").style.backgroundColor = "black";
+            document.querySelector(".buttonkort").style.backgroundColor = "#4c5866";
 
         }
 
@@ -53,8 +53,8 @@ async function hentJson() {
         function visMap() {
             document.querySelector("#kort").classList.remove("hide");
             document.querySelector("#liste").classList.add("hide");
-            document.querySelector(".buttonliste").style.backgroundColor = "beige";
-            document.querySelector(".buttonkort").style.backgroundColor = "blue";
+            document.querySelector(".buttonliste").style.backgroundColor = "#4c5866";
+            document.querySelector(".buttonkort").style.backgroundColor = "black";
         }
     }
 }

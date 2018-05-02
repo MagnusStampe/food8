@@ -7,8 +7,10 @@ Generel
 }
 
 h1 {
-    margin-top: 20px;
+    margin-top: 15px;
     text-align: center;
+    margin: 0 auto;
+    display: block;
 }
 
 
@@ -114,8 +116,10 @@ p {
     float: right;
     border: none;
     cursor: pointer;
+    color: white;
+    font-weight: 600;
     display: inline-block;
-    background-color: #AFD995;
+    background-color: #4c5866;
     border-radius: 20px/50px;
     text-decoration: none;
     cursor: pointer;
@@ -129,7 +133,7 @@ Footer
 */
 
 footer {
-    background: linear-gradient(#C2CAD0, rgba(155, 249, 206, 0.52));
+    background: linear-gradient(#9ad8cb, #bffbdf);
     display: grid;
     margin-top: 5vh;
     padding: 2vw 0 2vw 2vw;
@@ -259,25 +263,23 @@ header nav.open #burger div:nth-child(3) {
 
 #header_bar {
     background-image: url(img/splash.svg);
-    width: 100%;
+    width: 110%;
     height: 100px;
     z-index: 110;
     display: flex;
     justify-content: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
+
 }
 
 
 header nav {
     position: absolute;
-    background: linear-gradient(#C2CAD0, rgba(194, 185, 176, 0.76));
-    background: linear-gradient(rgba(194, 185, 176, 0.85), #C2CAD0);
+    background: #Bffbdf;
+    opacity: 0.9;
     left: -250px;
     top: 0;
-
-
     margin-top: 100px;
-
     width: 250px;
     height: 100vh;
     z-index: 100;
@@ -297,12 +299,14 @@ header nav button {
     border: none;
     background: none;
     text-align: left;
+    font-weight: 600;
 }
 
 header nav button:hover {
 
     cursor: pointer;
-    text-decoration: underline;
+    color: #4c5866;
+
 }
 
 nav a img {
@@ -313,21 +317,19 @@ nav a img {
 
 .nyhed_knap,
 .guides_knap {
-
-    background-color: #AFD995;
-
+    background-color: #4c5866;
     display: inline-block;
     cursor: pointer;
     color: white;
-    background-color: #AFD995;
+    font-weight: 600;
     border-radius: 20px/50px;
     text-decoration: none;
     cursor: pointer;
     transition: all 0.3s ease-out;
     font-size: 0.8em;
+    height: 25px;
 
 }
-
 
 
 .tilmeld_knap {
@@ -377,6 +379,7 @@ a {
 
 p {
     font-family: 'Muli', sans-serif;
+    margin-right: -10px;
 }
 
 #map {
@@ -508,27 +511,47 @@ p {
 
 main button {
     border: none;
-    background: #AFD995;
+    background: #4c5866;
+    color: white;
     border-radius: 9px;
-    width: 50vw;
+    width: 80vw;
     height: 3vh;
-    margin: 0vw 0 1vw 25%;
+    font-weight: 600;
     cursor: pointer;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+
+}
+
+
+.buttonbookbord {
+    border: none;
+    background: #4c5866;
+    color: white;
+    font-weight: 600;
+    border-radius: 9px;
+    width: 90vw;
+    height: 3vh;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 30px;
 
 }
 
 main button:hover {
-    background-color: #9BF9CE;
+    background-color: black;
 }
 
 .kasse {
-    background-color: rgba(194, 185, 176, 0.47);
+    background-color: #9ad8cb;
     padding: 1px 0px 10px 20px;
 }
 
 .kasse1 {
-    background-color: #C2B9B0;
-    padding: 10px 0px 10px 20px;
+    background-color: #9ad8cb;
+    padding: 20px 0px 10px 20px;
     margin-top: -20px;
 }
 
@@ -562,13 +585,13 @@ input:hover,
 
 
 input[type=submit] {
-    background-color: #AFD275;
+    background-color: #4c5866;
     color: white;
     cursor: pointer;
 }
 
 input[type=submit]:hover {
-    background-color: #7E685A;
+    background-color: black;
 }
 
 .col a {
@@ -580,7 +603,7 @@ input[type=submit]:hover {
     margin: 0 auto;
     margin-top: 50px;
     padding: 3vw 3vw 3vw 3vw;
-    background-color: #C2B9B0;
+    background-color: #Bffbdf;
 }
 
 
@@ -604,16 +627,19 @@ input[type=submit]:hover {
     font-size: 1em;
     padding: 5px;
     color: white;
-    background-color: #AFD275;
+    font-weight: 600;
+    background-color: #4c5866;
     border-radius: 20px/50px;
     text-decoration: none;
     cursor: pointer;
     transition: all 0.3s ease-out;
     font-size: 0.8em;
+    margin: 0 auto;
+    display: block;
 }
 
 .button:hover {
-    background: #AFD299;
+    background: black;
 }
 
 .box {
@@ -702,6 +728,9 @@ input[type=submit]:hover {
 
 .bookbord {
     display: none;
+    width: 300px;
+    margin: 0 auto;
+    padding-bottom: 50px;
 }
 
 .bookbord.open_bookbord {
@@ -738,13 +767,13 @@ input:hover,
 
 
 input[type=submit] {
-    background-color: #AFD275;
+    background-color: #4c5866;
     color: white;
     cursor: pointer;
 }
 
 input[type=submit]:hover {
-    background-color: #7E685A;
+    background-color: black;
 }
 
 .col1 a {
@@ -773,12 +802,13 @@ input[type=submit]:hover {
 .button1 {
     float: right;
     width: 120px;
+    font-weight: 600;
     margin-top: -25px;
     text-align: center;
     font-size: 1em;
     padding: 5px;
     color: white;
-    background-color: #AFD995;
+    background-color: #4c5866;
     border-radius: 20px/50px;
     text-decoration: none;
     cursor: pointer;
@@ -786,6 +816,9 @@ input[type=submit]:hover {
     font-size: 0.8em;
 }
 
+.button1:hover {
+    background-color: black;
+}
 
 .box1 {
     position: relative;
@@ -833,7 +866,7 @@ input[type=submit]:hover {
 }
 
 .popup1 .close1:hover {
-    color: grey;
+    color: black;
 }
 
 .popup1 .content1 {
@@ -919,13 +952,13 @@ input:hover,
 
 
 input[type=submit] {
-    background-color: #AFD275;
+    background-color: #4c5866;
     color: white;
     cursor: pointer;
 }
 
 input[type=submit]:hover {
-    background-color: #7E685A;
+    background-color: black;
 }
 
 .col2 a {
@@ -954,13 +987,17 @@ input[type=submit]:hover {
 .button2 {
     padding: 5px;
     color: white;
-    background-color: #AFD995;
+    background-color: #4c5866;
     border-radius: 20px/50px;
     text-decoration: none;
     cursor: pointer;
     transition: all 0.3s ease-out;
     font-size: 0.8em;
-    margin-left: 33%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    margin: 30px;
+    font-weight: 600;
 }
 
 
@@ -1032,4 +1069,8 @@ input[type=submit]:hover {
 
 .popup2 p {
     font-size: 0.7em;
+}
+
+.nyhedguideimg {
+    margin-top: 20px;
 }
