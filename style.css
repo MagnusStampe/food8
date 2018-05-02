@@ -169,15 +169,15 @@ header {
 header img {
     width: 170px;
     padding-top: 10px;
+}
 
-
+.logo {
+    position: absolute;
+    bottom: 130px;
+    left: 20px;
 }
 
 .logo img {
-    bottom: 20px;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-    bottom: 20px;
     position: relative;
     margin-left: 10px;
 }
