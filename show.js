@@ -92,7 +92,7 @@ function showDivs() {
         myIndex = 1
     }
     x[myIndex - 1].style.display = "block";
-    setTimeout(showDivs, 2000); // Change image every 2 seconds
+    setTimeout(showDivs, 2500); // Change image every 2 seconds
 }
 
 

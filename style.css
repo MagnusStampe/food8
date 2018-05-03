@@ -525,6 +525,10 @@ main button {
 
 }
 
+.homeButton2 {
+    margin-bottom: 140px;
+}
+
 
 .buttonbookbord {
     border: none;
@@ -551,6 +555,7 @@ main button:hover {
 .kasse {
     background-color: #9ad8cb;
     padding: 10px 0px 10px 20px;
+    margin-top: 15px;
 }
 
 .kasse1 {
